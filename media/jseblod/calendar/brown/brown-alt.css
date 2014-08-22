@@ -1,0 +1,137 @@
+/* Calendar: a Javascript class for Mootools that adds accessible and unobtrusive date pickers to your form elements <http://electricprism.com/aeron/calendar> */
+/* Alternate CSS for Calendar (navigation: 2), Copyright (c) 2007 Aeron Glemann <http://electricprism.com/aeron> */
+
+input.brown-alt,
+select.brown-alt {
+	width: 114px;
+}
+
+button.brown-alt {
+	background: url(brown-icon.gif);
+	border: 0;
+	cursor: pointer;
+	/* float: left; */
+	height: 20px;
+	margin-left: 11px;
+	padding-top: 7px;
+	width: 20px;
+}
+button.brown-alt:hover,
+button.brown-alt.active {
+	background-position: 0 20px;
+}
+
+div.brown-alt {
+	background: url(brown-main.png);
+	height: 195px;
+	padding: 0 6px;
+	text-align: center;
+	width: 147px;
+}	
+	div.brown-alt * {
+		margin: 0;
+		padding: 0;
+	}	
+	div.brown-alt div {
+		background: none !important;
+		cursor: move;
+		height: 185px;
+		overflow: hidden;
+		padding-top: 10px;
+		position: relative;
+		width: 147px;
+	}	
+	
+	div.brown-alt caption {
+		color: #A52A2A;
+		font: normal 12px/16px Arial, Helvetica, sans-serif;
+		overflow: hidden;
+		text-align: center;
+		width: 100%;
+	}
+	div.brown-alt caption a {
+		cursor: pointer;
+		display: block;
+		height: 12px;
+		overflow: hidden;
+		position: absolute;
+		text-indent: -100px;
+		top: 17px;
+		width: 11px;
+	}
+	div.brown-alt caption a.prev {
+		background-image: url(brown-prev.gif);
+		left: 0;
+	}
+	div.brown-alt caption a.next {
+		background-image: url(brown-next.gif);
+		right: 0;
+	}
+	div.brown-alt caption a:hover {
+		background-position: 0 12px;
+	}
+	div.brown-alt caption span {
+		padding-top: 6px;
+		position: relative;
+		text-align: center;
+	}
+	div.brown-alt caption span.month {
+		float: left;
+		width: 84px;
+	}
+	div.brown-alt caption span.month:after {
+		content: '';
+	}
+	div.brown-alt caption span a {
+		top: 8px;
+	}
+	div.brown-alt caption span.year {
+		float: right;
+		width: 63px;
+	}
+
+	div.brown-alt table {
+		background: #FFF;
+		border: 0;
+		border-collapse: collapse;
+		border-spacing: 0;
+		cursor: default;
+		margin: 0 auto;
+		overflow: hidden;
+		width: 147px;
+	}
+	div.brown-alt td,
+	div.brown-alt th {
+		border: 0;
+		color: #A52A2A;
+		font: normal 12px Arial, Helvetica, sans-serif;
+		height: 21px;
+		text-align: center;
+		width: 21px;
+	}
+	div.brown-alt td {
+		background: url(brown-td.gif);
+		color: #FFF;
+		font-size: 11px;
+	}
+	div.brown-alt td.invalid {
+		color: #999;
+	}
+	div.brown-alt td.valid {
+		background: url(brown-valid.gif);
+		color: #A52A2A;
+		cursor: pointer;
+	}
+	div.brown-alt td.hilite {
+		background: url(brown-hilite.gif);
+	}
+	div.brown-alt td.inactive {
+		background: url(brown-td.gif) 0 100%;
+		color: #FFF;
+	}
+	div.brown-alt td.active,
+	div.brown-alt td.hover {
+		background: url(brown-valid.gif) 0 100%;
+		color: #FFF;
+		cursor: pointer;
+	}

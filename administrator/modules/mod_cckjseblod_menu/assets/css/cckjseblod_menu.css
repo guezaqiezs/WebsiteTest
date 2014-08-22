@@ -1,0 +1,168 @@
+/**
+* @version $Id: cckjseblod_menu.css 10387 2008-06-03 10:59:16Z pasamio $
+* @copyright Copyright (C) 2005 - 2008 Open Source Matters. All rights reserved.
+* @license GNU/GPL, see LICENSE.php
+* Joomla! is free software. This version may have been modified pursuant
+* to the GNU General Public License, and as distributed it includes or
+* is derivative of works licensed under the GNU General Public License or
+* other free or open source software licenses.
+* See COPYRIGHT.php for copyright notices and details.
+*/
+
+/**
+ * @version    	1.2.0
+ * @package		jSeblod Extended Admin Menu
+ **/
+
+/* ---- Basic cckjseblod_menu styles ------------------- */
+
+/* common styling */
+.cckjseblod_menu, .cckjseblod_menu ul, .cckjseblod_menu li { margin: 0; padding: 0; border: 0 none; }
+
+.cckjseblod_menu       { position:relative; z-index: 100;}
+.cckjseblod_menu li    { float:left;  position:relative; list-style: none; display: inline;}
+.cckjseblod_menu li a  { display:block; white-space: nowrap;  }
+.cckjseblod_menu li li { /*width: 100%;*/ clear: both;  /*FF 1.0.7 needs this */  }
+.cckjseblod_menu li ul { visibility: hidden; position:absolute; }
+
+.cckjseblod_menu li li ul {  top: 0; left: 0; }
+
+.cckjseblod_menu li.hover ul               {  visibility: visible; }
+.cckjseblod_menu li.hover ul li ul 		  {  visibility: hidden;  }
+.cckjseblod_menu li.hover li.hover ul      {  visibility: visible;  left: 100%; }
+
+/* ---- cckjseblod_menu layout -------------------------- */
+
+.cckjseblod_menu li {
+	border-left: 1px solid #fff;
+	border-right: 1px solid #d8d8d8;
+}
+.cckjseblod_menu li li { border: 0;}
+
+.cckjseblod_menu ul    { border: 0.1em solid #ccc; background: #f6f6f6;}
+.cckjseblod_menu ul li.node { background: transparent url(../images/j_arrow.png) no-repeat right 50%; }
+.cckjseblod_menu ul li.separator { background: #DDE1E6;  height: 1px;  }
+
+.cckjseblod_menu a, .cckjseblod_menu div {
+	padding: 0.35em 1em 0.35em;
+	margin: 0 1px 0 1px;
+	color: #333333 !important;
+	line-height: 1.6em; vertical-align: middle;
+	font-size: 11px; font-weight: bold; text-decoration: none !important;
+	cursor: default;
+	background-repeat: no-repeat; background-position: left 50%
+}
+
+.cckjseblod_menu li.disabled a { color: gray !important; }
+
+.cckjseblod_menu ul a {
+	font-size: 11px;
+	font-weight: normal;
+	padding-left: 25px;
+	padding-right: 20px;
+	line-height: 1.2em;
+}
+
+/* 1 level - hover */
+.cckjseblod_menu li.hover a {  background-color: #E7EDDF; border-left: 1px solid #6D9D2E;  border-right:1px solid #6D9D2E; margin: 0; }
+/* 2 level - normal */
+.cckjseblod_menu li.hover li a { background-color: transparent; border: 0 none;   margin: 2px;  }
+/* 2 level - hover */
+.cckjseblod_menu li.hover li.hover a { background-color: #E7EDDF; border: 1px solid #6D9D2E;  margin: 1px;   }
+/* 3 level - normal */
+.cckjseblod_menu li.hover li.hover li a { background-color: transparent; border: 0 none;   margin: 2px;  }
+/* 3 level - hover */
+.cckjseblod_menu li.hover li.hover li a:hover { background-color: #E7EDDF; border: 1px solid #6D9D2E;  margin: 1px;  }
+
+/* subcckjseblod_menu styling */
+#subcckjseblod_menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#subcckjseblod_menu li {
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+
+#subcckjseblod_menu li a,
+#subcckjseblod_menu span.nolink {
+	cursor: pointer;
+	padding: 0px 15px;
+	border-right: 1px solid #ccc;
+	font-weight: bold;
+	color: #0B55C4;
+	line-height: 12px;
+	height: 12px;
+}
+
+#subcckjseblod_menu span.nolink {
+	color: #999;
+}
+
+#subcckjseblod_menu a.active,
+#subcckjseblod_menu span.nolink.active {
+	color: #000;
+	text-decoration: underline;
+}
+
+/* Red arrow for Submenu ! */
+.icon-16-j_arrow_red {
+  background-image: url(../images/j_arrow.png);
+}
+.icon-16-content-manager {
+  background-image: url(../images/icon-16-content.png);
+}
+.icon-16-template-manager {
+  background-image: url(../images/icon-16-templates.png);
+}
+.icon-16-type-manager {
+  background-image: url(../images/icon-16-types.png);
+}
+.icon-16-item-manager {
+  background-image: url(../images/icon-16-items.png);
+}
+.icon-16-search-manager {
+  background-image: url(../images/icon-16-searchs.png);
+}
+.icon-16-pack-manager {
+  background-image: url(../images/icon-16-packs.png);
+}
+.icon-16-cckjseblod {
+  background-image: url(../images/icon-16-jseblod.png);
+}
+.icon-16-helpjseblod {
+  background-image: url(../images/icon-16-helpjseblod.png);
+}
+
+/* Add-on */
+.icon-16-ecommerce-addon {
+  background-image: url(../images/icon-16-ecommerce.png);
+}
+.icon-16-cart-manager {
+  background-image: url(../images/icon-16-carts.png);
+}
+.icon-16-order-manager {
+  background-image: url(../images/icon-16-orders.png);
+}
+.icon-16-processor-manager {
+  background-image: url(../images/icon-16-processors.png);
+}
+.icon-16-currency-manager {
+  background-image: url(../images/icon-16-currencies.png);
+}
+
+.icon-16-webservice-addon {
+  background-image: url(../images/icon-16-webservices.png);
+}
+.icon-16-webservice-manager {
+  background-image: url(../images/icon-16-webservices.png);
+}
+.icon-16-task-manager {
+  background-image: url(../images/icon-16-tasks.png);
+}
+.icon-16-job-manager {
+  background-image: url(../images/icon-16-jobs.png);
+}

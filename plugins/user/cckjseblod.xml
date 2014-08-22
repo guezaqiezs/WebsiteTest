@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="plugin" group="system" version="1.5">
+
+	<name>User - jSeblod CCK</name>
+	<author>Octopoos</author>
+	<creationDate>September 2009</creationDate>
+	<authorEmail>contact@seblod.com</authorEmail>
+	<authorUrl>http://www.seblod.com</authorUrl>
+	<copyright>Copyright (C) 2011 SEBLOD. All Rights Reserved.</copyright>
+	<license>GNU General Public License version 2 or later.</license>
+	<version>1.6.0</version>
+	<description>User - jSeblod CCK ( Content Construction Kit )</description>
+	
+	<files>
+		<filename plugin="cckjseblod">cckjseblod.php</filename>
+	</files>
+	
+	<params />
+	
+</install>

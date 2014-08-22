@@ -1,0 +1,31 @@
+/**
+* @author       	http://www.seblod.com
+* @copyright		Copyright (C) 2011 SEBLOD. All Rights Reserved.
+* @package			SEBLOD 1.x (CCK for Joomla!)
+**/
+
+div.toolbar2 { float: right; text-align: right; padding: 0; }
+
+table.toolbar2 { border-collapse: collapse; padding: 0; margin: 0;	 }
+table.toolbar2 td { padding: 1px 1px 1px 4px; text-align: center; color: #666; height: 48px; }
+table.toolbar2 td.spacer  { width: 10px; }
+table.toolbar2 td.divider { border-right: 1px solid #eee; width: 5px; }
+
+table.toolbar2 span { float: none; width: 32px; height: 32px; margin: 0 auto; display: block; }
+
+table.toolbar2 a, table.toolbar2 a:visited {
+   	display: block; float: left;
+	white-space: nowrap;
+	border: 1px solid #000000;
+	padding: 1px 5px;
+	cursor: pointer;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+table.toolbar2 a:hover {
+	border:1px dashed #004dbc!important;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-weight: bold;
+}

@@ -1,0 +1,137 @@
+/* default: a Javascript class for Mootools that adds accessible and unobtrusive date pickers to your form elements <http://electricprism.com/aeron/default> */
+/* default-alt CSS for default (navigation: 2), Copyright (c) 2007 Aeron Glemann <http://electricprism.com/aeron> */
+
+input.default-alt,
+select.default-alt {
+	width: 114px;
+}
+
+button.default-alt {
+	background: url(default-icon.gif);
+	border: 0;
+	cursor: pointer;
+	/* float: left; */
+	height: 20px;
+	margin-left: 11px;
+	padding-top: 7px;
+	width: 20px;
+}
+button.default-alt:hover,
+button.default-alt.active {
+	background-position: 0 20px;
+}
+
+div.default-alt {
+	background: url(default-main.png);
+	height: 195px;
+	padding: 0 6px;
+	text-align: center;
+	width: 147px;
+}	
+	div.default-alt * {
+		margin: 0;
+		padding: 0;
+	}	
+	div.default-alt div {
+		background: none !important;
+		cursor: move;
+		height: 185px;
+		overflow: hidden;
+		padding-top: 10px;
+		position: relative;
+		width: 147px;
+	}	
+	
+	div.default-alt caption {
+		color: #0597DB;
+		font: normal 12px/16px Arial, Helvetica, sans-serif;
+		overflow: hidden;
+		text-align: center;
+		width: 100%;
+	}
+	div.default-alt caption a {
+		cursor: pointer;
+		display: block;
+		height: 12px;
+		overflow: hidden;
+		position: absolute;
+		text-indent: -100px;
+		top: 17px;
+		width: 11px;
+	}
+	div.default-alt caption a.prev {
+		background-image: url(default-prev.gif);
+		left: 0;
+	}
+	div.default-alt caption a.next {
+		background-image: url(default-next.gif);
+		right: 0;
+	}
+	div.default-alt caption a:hover {
+		background-position: 0 12px;
+	}
+	div.default-alt caption span {
+		padding-top: 6px;
+		position: relative;
+		text-align: center;
+	}
+	div.default-alt caption span.month {
+		float: left;
+		width: 84px;
+	}
+	div.default-alt caption span.month:after {
+		content: '';
+	}
+	div.default-alt caption span a {
+		top: 8px;
+	}
+	div.default-alt caption span.year {
+		float: right;
+		width: 63px;
+	}
+
+	div.default-alt table {
+		background: #FFF;
+		border: 0;
+		border-collapse: collapse;
+		border-spacing: 0;
+		cursor: default;
+		margin: 0 auto;
+		overflow: hidden;
+		width: 147px;
+	}
+	div.default-alt td,
+	div.default-alt th {
+		border: 0;
+		color: #0597DB;
+		font: normal 12px Arial, Helvetica, sans-serif;
+		height: 21px;
+		text-align: center;
+		width: 21px;
+	}
+	div.default-alt td {
+		background: url(default-td.gif);
+		color: #FFF;
+		font-size: 11px;
+	}
+	div.default-alt td.invalid {
+		color: #999;
+	}
+	div.default-alt td.valid {
+		background: url(default-valid.gif);
+		color: #0597DB;
+		cursor: pointer;
+	}
+	div.default-alt td.hilite {
+		background: url(default-hilite.gif);
+	}
+	div.default-alt td.inactive {
+		background: url(default-td.gif) 0 100%;
+		color: #FFF;
+	}
+	div.default-alt td.active,
+	div.default-alt td.hover {
+		background: url(default-valid.gif) 0 100%;
+		color: #FFF;
+		cursor: pointer;
+	}

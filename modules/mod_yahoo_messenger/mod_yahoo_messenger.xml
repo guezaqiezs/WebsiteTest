@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>Yahoo Messenger</name>
+	<author>Leke Ojikutu</author>
+	<creationDate>July 2010</creationDate>
+	<copyright>Copyright (C) 2010 www.lekeojikutu.com. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@lekeojikutu.com</authorEmail>
+	<authorUrl>www.lekeojikutu.com</authorUrl>
+	<version>1.5.0</version>
+	<description>DESCYAHOOMSGR</description>
+	<files>
+	<filename module="mod_yahoo_messenger">mod_yahoo_messenger.php</filename>
+	<filename>index.html</filename>
+	</files>
+	<params>
+		<param name="yid" type="text" default="" label="Yahoo ID" description="Your yahoo ID for the account to use(without the @yahoo.com)" />
+		<param name="name" type="text" default="" label="Display Name" description="The name or id you would like your members to see. May be the same or different from your yahoo id above" />
+	</params>
+	
+</install>

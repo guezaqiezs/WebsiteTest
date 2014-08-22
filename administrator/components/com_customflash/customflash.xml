@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0" method="upgrade">
+    <name>CustomFlash</name>
+    <author>DesignCompass corp</author>
+    <authorEmail>admin@designcompasscorp.com</authorEmail>
+    <authorUrl>http://compass.com.pa</authorUrl>
+    <copyright>Copyright (C) Design Compass corp. All rights reserved.</copyright>
+    <creationDate>September 2010</creationDate>
+    <version>1.2.1</version>
+    <description>CustomFlash - Site</description>
+   
+    <!-- installation part -->
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">uninstall.sql</file>
+		</sql>
+	</uninstall>
+	
+	<installfile>install.customflash.php</installfile>
+	<uninstallfile>uninstall.customflash.php</uninstallfile>
+	
+    <!-- site part -->
+
+    <menu task="default">CustomFlash</menu>
+   
+   
+   
+   
+    <files folder="site">
+		
+		<!-- root -->
+		<filename>controller.php</filename>
+		<filename>customflash.php</filename>
+		<filename>router.php</filename>
+		<filename>index.html</filename>
+		
+		<!-- elements -->
+		<filename>elements/index.html</filename>
+		<filename>elements/customflash.php</filename>
+		<filename>elements/customflashoptional.php</filename>
+
+		<!-- images -->
+		<filename>images/index.html</filename>
+		<filename>images/compasslogo.png</filename>
+		
+		<!-- includes -->
+		<filename>includes/customflash.php</filename>
+		
+		
+		<!-- views -->
+        <filename>views/index.html</filename>
+		
+		
+		<!-- views/flashmovie -->
+        <filename>views/flashmovie/index.html</filename>
+		<filename>views/flashmovie/view.html.php</filename>
+	
+		
+	
+		<!-- views/flashmovie/tmpl -->
+        <filename>views/flashmovie/tmpl/default.php</filename>
+		<filename>views/flashmovie/tmpl/default.xml</filename>
+		
+		
+		<filename>views/flashmovie/tmpl/index.html</filename>
+
+    </files>
+
+	<!-- module part -->
+	<files folder="modules">
+		<filename>module/index.html</filename>
+		<filename>module/mod_customflash.php</filename>
+		<filename>module/mod_customflash.xml</filename>
+	</files>
+	<!-- plugin part -->
+	<files folder="plugins">
+		<filename>plugin/customflash.php</filename>
+		<filename>plugin/customflash.xml</filename>
+	</files>
+	
+	
+	
+	
+	<administration>
+		<menu task="default">Custom Flash</menu>
+		<files folder="admin">
+		
+		<!-- root -->
+			<filename>index.html</filename>
+			<filename>install.sql</filename>
+			<filename>uninstall.sql</filename>
+
+			<filename>customflash.php</filename>
+		
+		<!-- controllers -->
+		
+			<filename>controllers/index.html</filename>
+			<filename>controllers/docs.php</filename>
+			<filename>controllers/flashmovies.php</filename>
+
+
+
+		<!-- models -->
+			<filename>models/index.html</filename>
+			<filename>models/flashmovieedit.php</filename>
+			
+		<!-- tables -->
+			<filename>tables/index.html</filename>
+			<filename>tables/flashmovieedit.php</filename>
+			
+		<!-- views -->
+			<filename>views/index.html</filename>
+			
+		<!-- views/flashmovies -->
+			<filename>views/flashmovies/index.html</filename>
+			<filename>views/flashmovies/view.html.php</filename>
+			
+		<!-- views/flashmovies/tmpl -->
+			<filename>views/flashmovies/tmpl/index.html</filename>
+			<filename>views/flashmovies/tmpl/default.php</filename>
+			
+		<!-- views/docs -->
+			<filename>views/docs/index.html</filename>
+			<filename>views/docs/view.html.php</filename>
+			
+		<!-- views/flashmovies/tmpl -->
+			<filename>views/docs/tmpl/index.html</filename>
+			<filename>views/docs/tmpl/default.php</filename>
+			
+		<!-- views/flashmovieedit -->
+			<filename>views/flashmovieedit/index.html</filename>
+			<filename>views/flashmovieedit/view.html.php</filename>
+			
+		<!-- views/flashmovieedit/tmpl -->
+			<filename>views/flashmovieedit/tmpl/index.html</filename>
+			<filename>views/flashmovieedit/tmpl/form.php</filename>
+						
+			
+
+		</files>
+		
+		
+	</administration>   	
+
+</install>

@@ -1,0 +1,137 @@
+/* Calendar: a Javascript class for Mootools that adds accessible and unobtrusive date pickers to your form elements <http://electricprism.com/aeron/calendar> */
+/* Alternate CSS for Calendar (navigation: 2), Copyright (c) 2007 Aeron Glemann <http://electricprism.com/aeron> */
+
+input.gold-alt,
+select.gold-alt {
+	width: 114px;
+}
+
+button.gold-alt {
+	background: url(gold-icon.gif);
+	border: 0;
+	cursor: pointer;
+	/* float: left; */
+	height: 20px;
+	margin-left: 11px;
+	padding-top: 7px;
+	width: 20px;
+}
+button.gold-alt:hover,
+button.gold-alt.active {
+	background-position: 0 20px;
+}
+
+div.gold-alt {
+	background: url(gold-main.png);
+	height: 195px;
+	padding: 0 6px;
+	text-align: center;
+	width: 147px;
+}	
+	div.gold-alt * {
+		margin: 0;
+		padding: 0;
+	}	
+	div.gold-alt div {
+		background: none !important;
+		cursor: move;
+		height: 185px;
+		overflow: hidden;
+		padding-top: 10px;
+		position: relative;
+		width: 147px;
+	}	
+	
+	div.gold-alt caption {
+		color: #f7ca00;
+		font: normal 12px/16px Arial, Helvetica, sans-serif;
+		overflow: hidden;
+		text-align: center;
+		width: 100%;
+	}
+	div.gold-alt caption a {
+		cursor: pointer;
+		display: block;
+		height: 12px;
+		overflow: hidden;
+		position: absolute;
+		text-indent: -100px;
+		top: 17px;
+		width: 11px;
+	}
+	div.gold-alt caption a.prev {
+		background-image: url(gold-prev.gif);
+		left: 0;
+	}
+	div.gold-alt caption a.next {
+		background-image: url(gold-next.gif);
+		right: 0;
+	}
+	div.gold-alt caption a:hover {
+		background-position: 0 12px;
+	}
+	div.gold-alt caption span {
+		padding-top: 6px;
+		position: relative;
+		text-align: center;
+	}
+	div.gold-alt caption span.month {
+		float: left;
+		width: 84px;
+	}
+	div.gold-alt caption span.month:after {
+		content: '';
+	}
+	div.gold-alt caption span a {
+		top: 8px;
+	}
+	div.gold-alt caption span.year {
+		float: right;
+		width: 63px;
+	}
+
+	div.gold-alt table {
+		background: #FFF;
+		border: 0;
+		border-collapse: collapse;
+		border-spacing: 0;
+		cursor: default;
+		margin: 0 auto;
+		overflow: hidden;
+		width: 147px;
+	}
+	div.gold-alt td,
+	div.gold-alt th {
+		border: 0;
+		color: #FFD700;
+		font: normal 12px Arial, Helvetica, sans-serif;
+		height: 21px;
+		text-align: center;
+		width: 21px;
+	}
+	div.gold-alt td {
+		background: url(gold-td.gif);
+		color: #FFF;
+		font-size: 11px;
+	}
+	div.gold-alt td.invalid {
+		color: #999;
+	}
+	div.gold-alt td.valid {
+		background: url(gold-valid.gif);
+		color: #FFD700;
+		cursor: pointer;
+	}
+	div.gold-alt td.hilite {
+		background: url(gold-hilite.gif);
+	}
+	div.gold-alt td.inactive {
+		background: url(gold-td.gif) 0 100%;
+		color: #FFF;
+	}
+	div.gold-alt td.active,
+	div.gold-alt td.hover {
+		background: url(gold-valid.gif) 0 100%;
+		color: #FFF;
+		cursor: pointer;
+	}

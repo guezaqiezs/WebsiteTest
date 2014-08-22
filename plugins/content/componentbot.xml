@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5.2" type="plugin" group="content" method="upgrade">
+	<name>Content - Componentbot</name>
+	<author>Klas Berlic - Kauselot</author>
+	<creationDate>September 2008</creationDate>
+	<copyright>Copyright (C) 2008 Klas Berlic. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/lgpl.html LGPL</license>
+	<authorEmail>kauselot@yahoo.com</authorEmail>
+	<authorUrl>url</authorUrl>
+	<version>1.5</version>
+	<description>Component includer - include any component in the content (via iframe). A kind of local wrapper. Code is {component}url{/component} . Replace url with the url to your component, WITHOUT index.php?. So the code would look like this: {component}option=com_blabla&amp;Itemid=73&amp;album=7{/component}</description>
+	<files>
+		<filename plugin="componentbot">componentbot.php</filename>
+	</files>
+	<params>
+		<param name="height" type="text" size="3" default="500" label="Frame height" description="Height of component frame" />
+		<param name="height_auto" type="radio" default="0" label="Auto Height" description="The height will automatically be set to the size of the external page. This will only work for pages on your own domain. If you see a javascript error, make sure this param is disabled. This will break XHTML compatibility for this page.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="width" type="text" size="3" default="500" label="Frame width" description="Width of component frame" />
+	</params>
+</install>

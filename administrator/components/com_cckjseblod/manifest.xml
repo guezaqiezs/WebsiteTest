@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0" method="upgrade">
+
+	<name>CCKjSeblod</name>
+	<author>Octopoos</author>
+	<creationDate>April 2009</creationDate>
+	<authorEmail>contact@seblod.com</authorEmail>
+	<authorUrl>http://www.seblod.com</authorUrl>
+	<copyright>Copyright (C) 2011 SEBLOD. All Rights Reserved.</copyright>
+	<license>GNU General Public License version 2 or later.</license>
+	<version>1.8.5</version>
+	<description>SEBLOD 1.x - www.seblod.com // by Octopoos - www.octopoos.com</description>
+
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install/install.cckjseblod.sql</file>
+		</sql>
+	</install>
+	
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">install/uninstall.cckjseblod.sql</file>
+		</sql>
+	</uninstall>
+		
+	<languages folder="site/languages">
+			<language tag="en-GB">en-GB/en-GB.com_cckjseblod.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.com_cckjseblod.ini</language>
+	</languages>
+	
+	<files folder="site">
+		<folder>assets</folder>
+		<folder>helpers</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+		
+		<filename>_CREDITS.php</filename>
+		<filename>_LICENSE.php</filename>
+		<filename>cckjseblod.php</filename>
+		<filename>controller.php</filename>
+		<filename>download.php</filename>
+		<filename>router.php</filename>
+		<filename>index.html</filename>
+	</files>
+	
+	<media folder="media">
+		<folder>jseblod</folder>
+	</media>
+	
+	<administration>
+		<menu img="components/com_cckjseblod/assets/images/jseblod/icon-16-jseblod.png">SEBLOD 1.x</menu>
+			
+		<languages folder="admin/languages">
+				<language tag="en-GB">en-GB/en-GB.com_cckjseblod.ini</language>
+				<language tag="fr-FR">fr-FR/fr-FR.com_cckjseblod.ini</language>
+		</languages>
+		
+		<files folder="admin">
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>elements</folder>
+			<folder>helpers</folder>
+			<folder>html</folder>
+			<folder>install</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+	
+			<filename>_CHANGELOG.php</filename>
+			<filename>_CREDITS.php</filename>
+			<filename>_LICENSE.php</filename>
+			<filename>_VERSION.php</filename>
+			<filename>admin.cckjseblod.php</filename>
+			<filename>controller.php</filename>
+			<filename>defines.php</filename>
+			<filename>download.php</filename>
+			<filename>editor.php</filename>
+			<filename>index.html</filename>
+		</files>
+	</administration>
+
+	<installfile>install.cckjseblod.php</installfile>
+	<uninstallfile>install/uninstall.cckjseblod.php</uninstallfile>
+	
+	<modules>
+		<module module="mod_cckjseblod_menu" position="menu" client="administrator" title="Extended Admin Menu - SEBLOD 1.x" ordering="1" state="0">
+			<files folder="mod_cckjseblod_menu">
+				<folder>assets</folder>
+
+				<file>cckjseblod_menu.php</file>
+				<file>helper.php</file>
+				<file>index.html</file>
+				<file>mod_cckjseblod_menu.php</file>
+				<file>mod_cckjseblod_menu.xml</file>
+			</files>
+
+			<languages folder="admin/languages">
+				<language tag="en-GB">en-GB/en-GB.mod_cckjseblod_menu.ini</language>
+				<language tag="fr-FR">fr-FR/fr-FR.mod_cckjseblod_menu.ini</language>
+			</languages>
+
+			<media />
+		</module>
+		<module module="mod_cckjseblod_quickicon" position="icon" client="administrator" title="Extended Quick Icons - SEBLOD 1.x" ordering="1" state="1">
+			<files folder="mod_cckjseblod_quickicon">
+				<folder>assets</folder>
+
+				<file>index.html</file>
+				<file>mod_cckjseblod_quickicon.php</file>
+				<file>mod_cckjseblod_quickicon.xml</file>
+			</files>
+
+			<languages folder="admin/languages">
+				<language tag="en-GB">en-GB/en-GB.mod_cckjseblod_quickicon.ini</language>
+				<language tag="fr-FR">fr-FR/fr-FR.mod_cckjseblod_quickicon.ini</language>
+			</languages>
+
+			<media />
+		</module>
+		<module module="mod_cckjseblod_toggle" position="status" client="administrator" title="Toggle - SEBLOD 1.x" ordering="0" state="1">
+			<files folder="mod_cckjseblod_toggle">
+				<folder>assets</folder>
+
+				<file>index.html</file>
+				<file>mod_cckjseblod_toggle.php</file>
+				<file>mod_cckjseblod_toggle.xml</file>
+			</files>
+
+			<languages folder="admin/languages">
+				<language tag="en-GB">en-GB/en-GB.mod_cckjseblod_toggle.ini</language>
+				<language tag="fr-FR">fr-FR/fr-FR.mod_cckjseblod_toggle.ini</language>
+			</languages>
+
+			<media />
+		</module>
+		<module module="mod_cckjseblod_toolbar" position="toolbar" client="administrator" title="Extended Toolbar - SEBLOD 1.x" ordering="1" state="1" replace="mod_toolbar">
+			<files folder="mod_cckjseblod_toolbar">
+				<folder>assets</folder>
+			
+				<file>index.html</file>
+				<file>mod_cckjseblod_toolbar.php</file>
+				<file>mod_cckjseblod_toolbar.xml</file>
+			</files>
+
+			<languages folder="admin/languages">
+				<language tag="en-GB">en-GB/en-GB.mod_cckjseblod_toolbar.ini</language>
+				<language tag="fr-FR">fr-FR/fr-FR.mod_cckjseblod_toolbar.ini</language>
+			</languages>
+
+			<media />
+		</module>
+		
+		<module module="mod_cckjseblod_list" position="right" client="site">
+			<files folder="mod_cckjseblod_list">
+				<folder>tmpl</folder>
+
+				<file>helper.php</file>
+				<file>index.html</file>
+				<file>mod_cckjseblod_list.php</file>
+				<file>mod_cckjseblod_list.xml</file>
+			</files>
+
+			<languages folder="site/languages">
+				<language tag="en-GB">en-GB/en-GB.mod_cckjseblod_list.ini</language>
+				<language tag="fr-FR">fr-FR/fr-FR.mod_cckjseblod_list.ini</language>
+			</languages>
+
+			<media />
+		</module>
+		<module module="mod_cckjseblod_login" position="right" client="site">
+			<files folder="mod_cckjseblod_login">
+				<folder>tmpl</folder>
+
+				<file>helper.php</file>
+				<file>index.html</file>
+				<file>mod_cckjseblod_login.php</file>
+				<file>mod_cckjseblod_login.xml</file>
+			</files>
+
+			<languages folder="site/languages">
+				<language tag="en-GB">en-GB/en-GB.mod_cckjseblod_login.ini</language>
+				<language tag="fr-FR">fr-FR/fr-FR.mod_cckjseblod_login.ini</language>
+			</languages>
+
+			<media />
+		</module>
+		<module module="mod_cckjseblod_search" position="right" client="site">
+			<files folder="mod_cckjseblod_search">
+				<folder>tmpl</folder>
+
+				<file>helper.php</file>
+				<file>index.html</file>
+				<file>mod_cckjseblod_search.php</file>
+				<file>mod_cckjseblod_search.xml</file>
+			</files>
+
+			<languages folder="site/languages">
+				<language tag="en-GB">en-GB/en-GB.mod_cckjseblod_search.ini</language>
+				<language tag="fr-FR">fr-FR/fr-FR.mod_cckjseblod_search.ini</language>
+			</languages>
+
+			<media />
+		</module>
+		<module module="mod_cckjseblod_siteforms" position="right" client="site">
+			<files folder="mod_cckjseblod_siteforms">
+				<folder>tmpl</folder>
+
+				<file>helper.php</file>
+				<file>index.html</file>
+				<file>mod_cckjseblod_siteforms.php</file>
+				<file>mod_cckjseblod_siteforms.xml</file>
+			</files>
+
+			<languages folder="site/languages">
+				<language tag="en-GB">en-GB/en-GB.mod_cckjseblod_siteforms.ini</language>
+				<language tag="fr-FR">fr-FR/fr-FR.mod_cckjseblod_siteforms.ini</language>
+			</languages>
+
+			<media />
+		</module>
+	</modules>
+	
+	<plugins>
+		<plugin plugin="cckjseblod" group="content">
+			<files folder="plg_cckjseblod_content">
+				<file>cckjseblod.php</file>
+				<file>cckjseblod.xml</file>
+			</files>
+
+			<languages />
+
+			<media />
+		</plugin>
+		
+		<plugin plugin="cckjseblod" group="editors" note="(Do not set as default editor!)">
+			<files folder="plg_cckjseblod_editor">
+				<file>cckjseblod.php</file>
+				<file>cckjseblod.xml</file>
+			</files>
+
+			<languages />
+
+			<media />
+		</plugin>
+		
+		<plugin plugin="cckjseblod" group="editors-xtd">
+			<files folder="plg_cckjseblod_editor_button">
+				<file>cckjseblod.php</file>
+				<file>cckjseblod.xml</file>
+			</files>
+
+			<languages />
+
+			<media />
+		</plugin>
+		
+		<plugin plugin="cckjseblod" group="search">
+			<files folder="plg_cckjseblod_search">
+				<file>cckjseblod.php</file>
+				<file>cckjseblod.xml</file>
+			</files>
+
+			<languages />
+
+			<media />
+		</plugin>
+		
+		<plugin plugin="cckjseblod" group="system">
+			<files folder="plg_cckjseblod_system">
+				<file>cckjseblod.php</file>
+				<file>cckjseblod.xml</file>
+			</files>
+
+			<languages />
+
+			<media />
+		</plugin>
+		
+		<plugin plugin="cckjseblod" group="user">
+			<files folder="plg_cckjseblod_user">
+				<file>cckjseblod.php</file>
+				<file>cckjseblod.xml</file>
+			</files>
+
+			<languages />
+
+			<media />
+		</plugin>
+	</plugins>
+	
+	<templates>
+		<template template="advanced_content" group="content" type="auto">
+			<files folder="tpl_advanced_content">
+				<folder>css</folder>
+				<folder>images</folder>
+
+				<file>index.html</file>
+				<file>index.php</file>
+				<file>params.ini</file>
+				<file>params.php</file>
+				<file>template_thumbnail.png</file>
+				<file>templateDetails.xml</file>
+			</files>
+
+			<languages />
+
+			<media />
+		</template>
+		<template template="category_subcategories" group="content" type="custom">
+			<files folder="tpl_category_subcategories">
+				<folder>css</folder>
+				<folder>images</folder>
+
+				<file>index.html</file>
+				<file>index.php</file>
+				<file>params.ini</file>
+				<file>params.php</file>
+				<file>template_thumbnail.png</file>
+				<file>templateDetails.xml</file>
+			</files>
+
+			<languages />
+
+			<media />
+		</template>
+		<template template="default_content" group="content" type="auto">
+			<files folder="tpl_default_content">
+				<folder>css</folder>
+				<folder>images</folder>
+
+				<file>index.html</file>
+				<file>index.php</file>
+				<file>params.ini</file>
+				<file>params.php</file>
+				<file>template_thumbnail.png</file>
+				<file>templateDetails.xml</file>
+			</files>
+
+			<languages />
+
+			<media />
+		</template>
+		
+		<template template="default_form" group="form" type="auto">
+			<files folder="tpl_default_form">
+				<folder>css</folder>
+				<folder>images</folder>
+
+				<file>index.html</file>
+				<file>index.php</file>
+				<file>params.ini</file>
+				<file>params.php</file>
+				<file>template_thumbnail.png</file>
+				<file>templateDetails.xml</file>
+			</files>
+
+			<languages />
+
+			<media />
+		</template>
+		<template template="simple_form" group="form" type="auto">
+			<files folder="tpl_simple_form">
+				<folder>css</folder>
+				<folder>images</folder>
+
+				<file>index.html</file>
+				<file>index.php</file>
+				<file>params.ini</file>
+				<file>params.php</file>
+				<file>template_thumbnail.png</file>
+				<file>templateDetails.xml</file>
+			</files>
+
+			<languages />
+
+			<media />
+		</template>
+		
+		<template template="advanced_list" group="list" type="auto">
+			<files folder="tpl_advanced_list">
+				<folder>css</folder>
+				<folder>images</folder>
+
+				<file>index.html</file>
+				<file>index.php</file>
+				<file>params.ini</file>
+				<file>params.php</file>
+				<file>template_thumbnail.png</file>
+				<file>templateDetails.xml</file>
+			</files>
+
+			<languages />
+
+			<media />
+		</template>
+		<template template="default_blog" group="list" type="auto">
+			<files folder="tpl_default_blog">
+				<folder>css</folder>
+				<folder>images</folder>
+
+				<file>index.html</file>
+				<file>index.php</file>
+				<file>params.ini</file>
+				<file>params.php</file>
+				<file>template_thumbnail.png</file>
+				<file>templateDetails.xml</file>
+			</files>
+
+			<languages />
+
+			<media />
+		</template>
+		<template template="default_list" group="list" type="auto">
+			<files folder="tpl_default_list">
+				<folder>css</folder>
+				<folder>images</folder>
+
+				<file>index.html</file>
+				<file>index.php</file>
+				<file>params.ini</file>
+				<file>params.php</file>
+				<file>template_thumbnail.png</file>
+				<file>templateDetails.xml</file>
+			</files>
+
+			<languages />
+
+			<media />
+		</template>
+	</templates>
+	
+	<categories>
+		<category category="default-submission" title="Default Submission" state="1" inherited="default_action" />
+		<category category="default-registration" title="Default Registration" state="1" inherited="default_action_user" />
+		<category category="default-users-content" title="Default User's Content" state="1" inherited="default_action_users_content" />
+		<category category="contact-us" title="Contact Us" state="1" inherited="contact_action" />
+	</categories>
+</install>

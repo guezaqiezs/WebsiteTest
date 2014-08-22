@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Flash Movie">
+		<message>
+		</message>
+	</layout>
+	<state>
+		<name>Custom Flash - Flash Movie</name>
+		<description>A link to already created flash movie.</description>
+    
+	
+	    <params addpath="/components/com_customflash/elements">
+	        <param type="customflash" name="movieid" default="" label="Select Flash Movie" description="Select Flash Movie" />
+			
+			<param type="list" name="align" default="default" label="Align" description="Select Align to method" >
+				<option value="">Default</option>
+				<option value="left">Left</option>
+				<option value="center">Center</option>
+				<option value="right">Right</option>
+			</param>
+			
+		</params>
+		
+	</state>
+</metadata>

@@ -1,0 +1,94 @@
+/**
+* @author       	http://www.seblod.com
+* @copyright		Copyright (C) 2011 SEBLOD. All Rights Reserved.
+* @package			SEBLOD 1.x (CCK for Joomla!)
+**/
+
+.cck-debug {
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom: 1px dashed #CCC;
+}
+
+.modal-bg-toolbar {
+	background-color: #FBFBFB;
+}
+
+fieldset.adminform_error {
+font-weight:bold;
+background:#E6C0C0 url(../../../../administrator/templates/khepri/images/notice-alert.png) no-repeat scroll 4px top;
+border-bottom:3px solid #DE7A7B;
+border-top:3px solid #DE7A7B;
+border-left: 0px;
+border-right: 0px;
+color:#CC0000;
+margin: 0 10px 10px 10px;
+}
+
+/**
+ * Admin Toolbar
+ **/
+ 
+.reducepadding {
+	padding: 0 !important;
+}
+
+div.header {
+	font-size: 22px; font-weight: bold; color: #0B55C4; line-height: 48px;
+	padding-left: 55px;
+	background-repeat: no-repeat;
+	margin-left: 10px;
+}
+
+div.header span { color: #666; }
+
+div.configuration {
+	font-size: 14px; font-weight: bold; color: #0B55C4; line-height: 16px;
+	padding-left: 30px;
+	margin-left: 10px;
+	background-image: url(../images/menu/icon-16-config.png);
+	background-repeat: no-repeat;
+}
+
+div.toolbar { float: right; text-align: right; padding: 0; }
+
+table.toolbar    			 { border-collapse: collapse; padding: 0; margin: 0;	 }
+table.toolbar td 			 { padding: 1px 1px 1px 4px; text-align: center; color: #666; height: 48px; }
+table.toolbar td.spacer  { width: 10px; }
+table.toolbar td.divider { border-right: 1px solid #eee; width: 5px; }
+
+table.toolbar span { float: none; width: 32px; height: 32px; margin: 0 auto; display: block; }
+
+table.toolbar a {
+   display: block; float: left;
+	white-space: nowrap;
+	border: 1px solid #fbfbfb;
+	padding: 1px 5px;
+	cursor: pointer;
+}
+
+table.toolbar a:hover {
+	border-left: 1px solid #eee;
+	border-top: 1px solid #eee;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	text-decoration: none;
+	color: #0B55C4;
+}
+
+.button2-left .next {
+	background: url(../../../../administrator/templates/khepri/images/j_button2_next.png) 100% 0 no-repeat;
+}
+
+.button2-left.off .next {
+	background: url(../../../../administrator/templates/khepri/images/j_button2_next_off.png) 100% 0 no-repeat;
+}
+
+.display-yes {
+	display: block;
+}
+
+.display-no {
+	display: none;
+}

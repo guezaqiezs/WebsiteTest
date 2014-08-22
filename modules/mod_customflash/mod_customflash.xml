@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="module" method="upgrade">
+    <name>Custom Flash</name>
+    <author>Design Compass corp</author>
+    <creationDate>September 2010</creationDate>
+    <copyright>Copyright (C) 2010 DesignCompassCorp. All rights reserved.</copyright>
+    <license>GNU General Public License</license>
+    <authorEmail>admin@designcompasscorp.com</authorEmail>
+    <authorUrl>http://www.designcompasscorp.com/</authorUrl>
+    <version>1.2.1</version>
+    <description>A module to show custom (any) Adobe Flash movie.</description>
+    <files>
+        <filename module="mod_customflash">mod_customflash.php</filename>
+        <filename>mod_customflash.xml</filename>
+    </files>
+	
+    <params addpath="/components/com_customflash/elements">
+        
+		<param type="customflashoptional" name="movieid" default="" label="Select Flash Movie" description="If Flash Movie is selected it will overwrite all below." />
+		
+        <param type="text" size="100" name="file" default="" label="File Path" description="File Path" />
+        
+        <param type="text" name="width" default="" label="Width" description="Width in pixels" />
+        <param type="text" name="height" default="" label="Height" description="Height in pixels" />
+        
+        
+        <param type="list" name="wmode" default="transparent" label="Window Mode" description="by default: opaque" >
+            <option value="opaque">Opaque Windowless</option>
+            <option value="transparent">Transparent Windowless</option>
+            
+            
+        </param>
+        
+        <param type="list" name="quality" default="high" label="Quality" description="by default: high" >
+            <option value="autolow">Auto Low</option>
+            <option value="autohigh">Auto High</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+            <option value="best">Best</option>
+        </param>
+        <param type="text" name="bgcolor" default="000000" label="Background color" description="by default: 000000" />
+		<param type="text" name="style" default="" label="CSS Style" description="EXAMPLE:  border: solid 1px #ff0000;" />
+        
+        
+        <param type="radio" name="play" default="1" label="Paused at start" description="by default: no" >
+            <option value="0">yes</option>
+            <option value="1">no</option>
+        </param>
+        
+        <param type="list" name="scale" default="noscale" label="Scale" description="by default: No Scale" >
+            <option value="exactfit">Exact Fit</option>
+            <option value="noborder">No Border</option>
+            <option value="noscale">No Scale</option>
+            
+        </param>
+		
+		<param
+                        name="flashvars"
+                        type="text"
+                        label="FlashVars"
+                        description=""
+                        class="inputbox"
+                        default=""
+                        size="60"
+        />
+		
+		<param type="radio" name="checkflashavailability" default="1" label="Check Flash Player Availability" description="Check if there is Flash Player installed" >
+            <option value="1">yes</option>
+            <option value="0">no</option>
+        </param>
+		
+		<param type="textarea"  rows="10" cols="30"  name="alternativehtml" default="" label="Alternative HTML" description="Show this HTML code if there is no Flash Player." />		
+		<param type="text" size="100" name="alternativeimage" default="" label="Alternative Image" description="Show this image if there is no Flash Player and no alternative HTML." />
+        
+    </params>
+</install>

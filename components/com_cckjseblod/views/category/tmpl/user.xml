@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="User's Categories List Layout (Author)">
+		<message>
+			<![CDATA[CONTENT CATEGORY USER LIST LAYOUT]]>
+		</message>
+	</layout>
+	<state>
+		<name>Categories. User's Categories List Layout ( jSeblod CCK )</name>
+		<description>CONTENT CATEGORY USER LIST LAYOUT</description>
+		
+		<params addpath="/administrator/components/com_cckjseblod/elements">
+			<param name="show_unpublished" type="radio" default="0" label="Show Unpublished" description="Show/Hide Unpublished Items">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param type="spacer" default=" " />
+			<param name="auto_redirect" type="radio" default="0" label="Auto Redirection" description="Show Item Form Edition instead of Item List when only one item listed.">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param name="@spacer" type="spacer" default="" label="" description="" />
+<param name="enable_add" type="list" default="" label="Add Button" description="Show/Hide Add Button">
+				<option value="">Hide</option>
+				<option value="left">Left</option>
+				<option value="right">Right</option>
+			</param>
+			<param name="enable_publish" type="list" default="" label="Publish Button" description="Show/Hide Publish Button">
+				<option value="">Hide</option>
+				<option value="left">Left</option>
+				<option value="right">Right</option>
+			</param>
+			<param name="enable_unpublish" type="list" default="" label="Unpublish Button" description="Show/Hide Unpublish Button">
+				<option value="">Hide</option>
+				<option value="left">Left</option>
+				<option value="right">Right</option>
+			</param>
+			<param name="enable_delete" type="list" default="" label="Delete Button" description="Show/Hide Delete Button">
+				<option value="">Hide</option>
+				<option value="left">Left</option>
+				<option value="right">Right</option>
+			</param>
+			<param name="@spacer" type="spacer" default="" label="" description="" />
+			<param name="orderby_sec" type="list" default="alpha" label="Primary Order" description="Order that the items will be displayed in.">
+				<option value="date">Oldest first</option>
+				<option value="rdate">Most recent first</option>
+				<option value="alpha">Title Alphabetical</option>
+				<option value="ralpha">Title Reverse-Alphabetical</option>
+				<option value="author">Author Alphabetical</option>
+				<option value="rauthor">Author Reverse-Alphabetical</option>
+				<option value="order">Ordering</option>
+			</param>
+			<param name="@spacer" type="spacer" default="" label="" description="" />
+			<param name=" " type="panelinfo" default="0" label="" description="PANEL INFO ELEMENT" />
+		</params>
+		<advanced addpath="/administrator/components/com_cckjseblod/elements">
+			<param name="show_headings" type="radio" default="1" label="Table Headings" description="Show/Hide the Table Headings">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			<param type="spacer" default=" " />
+			<param name="num_format" type="radio" default="0" label="# Num Column" description="Show Id or Incremental Num.">
+				<option value="1">Id</option>
+				<option value="0">Incremental Num</option>
+			</param>
+			<param type="spacer" default=" " />
+			<param name="show_state" type="list" default="1" label="# State Column" description="Show/Hide the State column">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			<param name="state_width" type="text" size="15" default="7%" label="State Width" description="MENUCATEGORYWIDTH" />
+			<param type="spacer" default=" " />
+			<param name="show_author" type="list" default="1" label="# Author Column" description="Show/Hide the Author column">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			<param name="author_width" type="text" size="15" default="15%" label="Author Width" description="MENUCATEGORYWIDTH" />
+			<param type="spacer" default=" " />
+			<param name="show_edit" type="list" default="1" label="# Edit Column" description="Show/Hide the Edit column">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			<param name="@spacer" type="spacer" default="" label="" description="" />
+			<param name="button_color" type="colorpicker" default="#ffffff" label="Button Text Color" description="Select Title &amp; Panel Title Color" />
+			<param name="button_bgcolor" type="colorpicker" default="#6cc634" label="Button Background Color" description="Select Title &amp; Panel Title Color" />
+			<param name="@spacer" type="spacer" default="" label="" description="" />
+			<param name=" " type="panelinfo2" default="0" label="" description="PANEL INFO ELEMENT" />
+		</advanced>
+	</state>
+
+</metadata>

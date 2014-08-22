@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="upgrade">
+<name>Twitter Roll - The Module</name>
+<creationDate>April 2011</creationDate>
+<version>1.0.4</version>
+<author>GraphicAholic</author>
+<copyright>Copyright 2011 - graphicaholic.com</copyright>
+<license>http://www.gnu.org/copyleft/lgpl.html</license>
+<authorEmail>ech@graphicaholic.com</authorEmail>
+<authorUrl>http://www.graphicaholic.com</authorUrl>
+	<description>DESCTWITTERROLL</description>
+	<files>
+		<filename module="mod_twitterroll">mod_twitterroll.php</filename>
+		<filename module="mod_twitterroll">index.html</filename>
+		<filename module="mod_twitterroll">js/twitter.search.border.js</filename>
+		<filename module="mod_twitterroll">js/twitter.search.noborder.js</filename>
+		<filename module="mod_twitterroll">js/mooRainbow.js</filename>
+		<filename module="mod_twitterroll">js/index.html</filename>
+		<filename module="mod_twitterroll">css/mooRainbow.css</filename>
+		<filename module="mod_twitterroll">css/index.html</filename>
+		<filename module="mod_twitterroll">assets/color.php</filename>
+		<filename module="mod_twitterroll">assets/index.html</filename>
+		<filename module="mod_twitterroll">images/moor_arrows.gif</filename>
+		<filename module="mod_twitterroll">images/moor_boverlay.png</filename>
+		<filename module="mod_twitterroll">images/moor_cursor.gif</filename>
+		<filename module="mod_twitterroll">images/moor_slider.png</filename>
+		<filename module="mod_twitterroll">images/moor_woverlay.png</filename>
+		<filename module="mod_twitterroll">images/rainbow.png</filename>
+		<filename module="mod_twitterroll">images/blank.gif</filename>
+		<filename module="mod_twitterroll">images/glossyback2.gif</filename>
+		<filename module="mod_twitterroll">images/glossyback.gif</filename>
+		<filename module="mod_twitterroll">images/twitterroll_module.jpg</filename>
+		<filename module="mod_twitterroll">images/index.html</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_twitterroll.ini</language>
+	</languages>
+	<params addpath="/modules/mod_twitterroll/assets">
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="Module Class Suffix" />
+		<param name="load_jquery" type="radio" default="0" label="Load jQuery?" description="Load the jQuery script?">	
+			<option value="1">Yes</option>	
+			<option value="0">No</option>
+		</param>
+	<param name="spacer0" type="spacer" default="" label="" description="" />
+	<param name="spacer" type="spacer" default="IMPORTANT: Only one of the following two options can be set to 'Yes'." label="IMPORTANT" description="IMPORTANT: Only one of the following two options can be set to 'Yes'." />
+		<param name="borderEffect" type="list" default="1" label="Border Effect" description="Select yes to use the border effect. IMPORTANT: If you select 'Yes', make sure option below is set to 'No'">		
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="noborderEffect" type="list" default="0" label="No Border Effect" description="Select yes to use the NO border effect. IMPORTANT: If you select 'Yes', make sure option above is set to 'No'">		
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="spacer0" type="spacer" default="" label="" description="" />
+		<param name="searchTerm" type="text" default="" label="Twitter search query" description="Twitter search query" />
+		<param name="title" type="text" default="" label="Title" description="Title" />
+		<param name="titleLink" type="text" default="http://" label="Title Link" description="Type in full URL for Title Link (i.e. http://www.graphicaholic.com/joomla)." />
+		<param name="colorExterior" type="color" default="#dddddd" label="Outside border color" description="Outside border color (use the full HEX value). Type in [none] if using the No Border effect." />
+		<param name="colorInterior" type="color" default="#f6f6f6" label="Inside module color" description="Inside container color (use the full HEX value)." />
+		<param name="height" type="text" default="300px" label="Module's height" description="Module's height (Include the 'px' after your height value - Example: 300px)" />
+		<param name="width" type="text" default="auto" label="Module's width" description="Module's width (Default is 'auto' so it will fill the entire width position automatically. Include the 'px' after your width value - Example: 300px)" />
+
+<param name="avatar" type="radio" default="0" label="Show Poster's Avatar?" description="Show poster's avatar (Yes / No)?">
+			<option value="0">Yes</option>
+			<option value="1">No</option>
+	</param>
+
+<param name="pause" type="radio" default="0" label="Pause on Mouseover" description="Pause the scrolling effect on mouseover?">
+			<option value="0">Yes</option>
+			<option value="1">No</option>
+	</param>
+<param name="time" type="radio" default="0" label="Show Time-Stamp" description="Do you want to show the posting time-stamp?">
+			<option value="0">Yes</option>
+			<option value="1">No</option>
+	</param>
+<param name="bird" type="radio" default="0" label="Twitter bird image?" description="Display Twitter bird image on outside border?">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+	</param>
+
+		<param name="tweetScroll" type="text" default="4000" label="Tweet scroll speed" description="Tweet scroll speed" />
+	</params>
+</install>

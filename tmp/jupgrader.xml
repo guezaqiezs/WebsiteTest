@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<update release="1.5.25">
+<message></message>
+<updater minimumversion="1.5.1" currentversion="1.5.1">http://joomlacode.org/gf/project/pasamioprojects/frs/</updater>
+<fullpackage url="http://joomlacode.org/gf/download/frsrelease/16026/69664/Joomla_1.5.25-Stable-Full_Package.tar.gz" filename="Joomla_1.5.25-Stable-Full_Package.tar.gz" filesize="4924558" md5="957fbb82d9a5dcbdf7efa3e0caa73fca" />
+<patches>
+	<patchpackage version="1.5.24" url="http://joomlacode.org/gf/download/frsrelease/16025/69670/Joomla_1.5.24_to_1.5.25-Stable-Patch_Package.tar.gz" filename="Joomla_1.5.24_to_1.5.25-Stable-Patch_Package.tar.gz" filesize="31813" md5="deee818c6829373d4aa641486211f9f1" />
+	<patchpackage version="1.5.0" url="http://joomlacode.org/gf/download/frsrelease/16025/69667/Joomla_1.5.0_to_1.5.25-Stable-Patch_Package.tar.gz" filename="Joomla_1.5.0_to_1.5.25-Stable-Patch_Package.tar.gz" filesize="2935974" md5="3fc77b33bbbb1aae0a0dd8529c070baa" />
+</patches>
+</update>

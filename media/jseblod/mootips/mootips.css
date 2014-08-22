@@ -1,0 +1,38 @@
+/**
+ *	Ajax ToolTip
+ **/
+.ajaxTool-tip {
+	float: left;
+	background: #ffc;
+	padding: 5px;
+	max-width: 250px;
+	z-index: 1300;
+	border: 1px dashed #FFD700;
+}
+ 
+.ajaxTool-title {
+	padding: 0;
+	margin: 0;
+	font-size: 100%;
+	font-weight: bold;
+	margin-top: -15px;
+	padding-top: 15px;
+	padding-bottom: 5px;
+	/*background: url(selector-arrow.png) no-repeat;*/
+}
+ 
+.ajaxTool-text {
+	font-size: 100%;
+	margin: 0;
+}
+
+.ajaxTool-loading {
+	background: url(spinner.gif) center center no-repeat;
+	width: 18px;
+	height: 18px;
+	margin: 0 auto;
+}
+
+.ajaxTip { }
+
+a.ajaxTip { }

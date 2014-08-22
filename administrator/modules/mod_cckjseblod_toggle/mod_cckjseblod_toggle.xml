@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" client="administrator" version="1.5">
+
+	<name>Toggle - SEBLOD 1.x</name>
+	<author>Octopoos</author>
+	<creationDate>September 2009</creationDate>
+	<authorEmail>contact@seblod.com</authorEmail>
+	<authorUrl>http://www.seblod.com</authorUrl>
+	<copyright>Copyright (C) 2011 SEBLOD. All Rights Reserved.</copyright>
+	<license>GNU General Public License version 2 or later.</license>
+	<version>1.8.5</version>
+	<description>Toggle - SEBLOD 1.x
+	<![CDATA[
+	<a href="index.php?option=com_modules&client=1">(don't forget to publish it, and select the "status" position) click here</a>
+	]]>
+	</description>
+
+	<files>
+		<filename module="mod_cckjseblod_toggle">mod_cckjseblod_toggle.php</filename>
+		<filename>index.html</filename>
+		<filename>assets/index.html</filename>
+		<filename>assets/css/index.html</filename>
+		<filename>assets/css/cckjseblod_toggle.css</filename>
+	</files>
+
+	<params />
+
+</install>

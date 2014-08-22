@@ -1,0 +1,138 @@
+/* Calendar: a Javascript class for Mootools that adds accessible and unobtrusive date pickers to your form elements <http://electricprism.com/aeron/calendar> */
+/* Default CSS for Calendar (navigation: 1), Copyright (c) 2007 Aeron Glemann <http://electricprism.com/aeron> */
+
+.hidden {
+	opacity: 0;
+	position: absolute;
+}
+.visible {
+	opacity: 1;
+}
+
+
+input.brown-cal,
+select.brown-cal {
+	width: 114px;
+}
+
+button.brown-cal {
+	background: url(brown-icon.gif);
+	border: 0;
+	cursor: pointer;
+	/* float: left; */
+	height: 20px;
+	margin-left: 11px;
+	padding-top: 7px;
+	width: 20px;
+}
+button.brown-cal:hover,
+button.brown-cal.active {
+	background-position: 0 20px;
+}
+
+div.brown-cal {
+	background: url(brown-main.png);
+	height: 195px;
+	padding: 0 6px;
+	text-align: center;
+	width: 147px;
+}	
+	div.brown-cal * {
+		margin: 0;
+		padding: 0;
+	}	
+	div.brown-cal div {
+		background: none !important;
+		cursor: move;
+		height: 185px;
+		overflow: hidden;
+		padding-top: 10px;
+		position: relative;
+		width: 147px;
+	}	
+	
+	div.brown-cal caption {
+		color: #A52A2A;
+		font: normal 12px/16px Arial, Helvetica, sans-serif;
+		padding-top: 6px;
+		text-align: center;
+		width: 100%;
+	}
+	div.brown-cal caption a {
+		cursor: pointer;
+		display: block;
+		height: 12px;
+		overflow: hidden;
+		position: absolute;
+		text-indent: -100px;
+		top: 17px;
+		width: 11px;
+	}
+	div.brown-cal caption a.prev {
+		background-image: url(brown-prev.gif);
+		left: 0;
+	}
+	div.brown-cal caption a.next {
+		background-image: url(brown-next.gif);
+		right: 0;
+	}
+	div.brown-cal caption a:hover {
+		background-position: 0 12px;
+	}
+	div.brown-cal caption span {
+		height: 25px;
+		position: relative;
+		text-align: center;
+	}
+	div.brown-cal caption span.month {
+		padding-right: 8px;
+	}
+	div.brown-cal caption span.month:after {
+		content: ',';
+	}
+
+	div.brown-cal table {
+		background: #FFF;
+		border: 0;
+		border-collapse: collapse;
+		border-spacing: 0;
+		cursor: default;
+		margin: 0 auto;
+		overflow: hidden;
+		width: 147px;
+	}
+	div.brown-cal td,
+	div.brown-cal th {
+		border: 0;
+		color: #A52A2A;
+		font: normal 12px Arial, Helvetica, sans-serif;
+		height: 21px;
+		text-align: center;
+		width: 21px;
+	}
+	div.brown-cal td {
+		background: url(brown-td.gif);
+		color: #FFF;
+		font-size: 11px;
+	}
+	div.brown-cal td.invalid {
+		color: #999;
+	}
+	div.brown-cal td.valid {
+		background: url(brown-valid.gif);
+		color: #A52A2A;
+		cursor: pointer;
+	}
+	div.brown-cal td.hilite {
+		background: url(brown-hilite.gif);
+	}
+	div.brown-cal td.inactive {
+		background: url(brown-td.gif) 0 100%;
+		color: #FFF;
+	}
+	div.brown-cal td.active,
+	div.brown-cal td.hover {
+		background: url(brown-valid.gif) 0 100%;
+		color: #FFF;
+		cursor: pointer;
+	}

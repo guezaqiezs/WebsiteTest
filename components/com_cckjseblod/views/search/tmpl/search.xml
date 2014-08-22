@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Search Form &amp; List View Layout">
+		<message>
+			<![CDATA[SEARCH DESCRIPTION LAYOUT]]>
+		</message>
+	</layout>
+	<state>
+		<name>Search Form &amp; List View Layout ( jSeblod CCK )</name>
+		<description>SEARCH DESCRIPTION LAYOUT</description>
+		<url addpath="/administrator/components/com_cckjseblod/elements">
+			<param name="searchid" type="search" default="0" label="Search" description="SEARCH ELEMENT" />
+			<param name="task" type="radio" default="search" label="Show List View" description="Show/Hide List View on first load.">
+				<option value="no">No</option>
+				<option value="search">Yes</option>
+			</param>
+		</url> 
+		<params addpath="/administrator/components/com_cckjseblod/elements">
+			<param name="show_form" type="radio" default="1" label="Show Search Form" description="Show/Hide Search Form">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param type="spacer" default=" " />
+			<param name="auto_redirect" type="radio" default="0" label="Auto Redirection" description="Show Item instead of List view when only one item listed.">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param type="spacer" default=" " />
+			<param name="list_live" type="textarea" default="" label="List (Live)" description="Fieldname=Value (Separated by line break)" rows="4" cols="30" />
+			<param name=" " type="cckjseblodempty" default="0" label=" " description=" " />
+			<param name="@spacer" type="spacer" default="" label="" description="" />
+			<param name=" " type="panelinfo1" default="0" label="" description="PANEL INFO ELEMENT" />
+		</params>
+		<advanced addpath="/administrator/components/com_cckjseblod/elements">
+			<param name="show_nb_item" type="list" default="0" label="Show Items Number" description="Show/Hide Items Number">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			<param name="show_label_item" type="text" default="Results" label="Items Label" description="Edit Items Label" />
+			<param name="show_nb_page" type="list" default="1" label="Show Pages Number" description="Show/Hide Pages Number">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			<param name="show_pagination" type="list" default="0" label="Show Pagination" description="Show/Hide Pagination">
+				<option value="0">Bottom</option>
+				<option value="1">Bottom + Top</option>
+			</param>	
+			<param name="@spacer" type="spacer" default="" label="" description="" />
+			<param name="show_num" type="list" default="1" label="Show Incremental Num" description="Show/Hide Incremental Num">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			<param name="show_title" type="list" default="1" label="Show Title" description="Show/Hide Title">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			<param name="show_category" type="list" default="1" label="Show Category Title" description="Show/Hide Category Title">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			<param name="show_date" type="list" default="0" label="Show Created Date" description="Show/Hide Created Date">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			<param name="@spacer" type="spacer" default="" label="" description="" />
+			<param name=" " type="panelinfo2" default="0" label="" description="PANEL INFO ELEMENT" />
+		</advanced>
+	</state>
+
+</metadata>

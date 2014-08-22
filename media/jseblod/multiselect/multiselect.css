@@ -1,0 +1,66 @@
+div.multiSelectContainer{
+background:#fff url(images/ddl.png) no-repeat;
+position:relative;
+padding:4px 0 0 3px;
+font-size:11px;
+font-family:Arial, Helvetica, sans-serif;
+}
+div.multiSelectContainer.hover{
+background:url(images/ddl_act.png) no-repeat;
+}
+div.multiSelectContainer a{
+top:0;
+right:0;
+position:absolute;
+display:block;
+width:17px;
+height:22px;
+z-index:20;
+background:url(images/dd.png) no-repeat;
+margin:0;padding:0;
+text-decoration:none;
+font-size:11px;
+}
+div.multiSelectContainer a.hover{
+background:url(images/dd_act.png) no-repeat;
+}
+div.multiSelectContainer p{
+cursor:pointer;
+overflow:hidden;
+margin:0;padding:0;
+max-height:17px;
+font-size:11px;
+}
+div.multiSelectContainer ul{
+background:#fff;
+border:1px solid #999;
+margin:3px 0 0 -3px;
+display:none;
+list-style:none;
+padding:0;
+overflow:hidden;
+}
+div.multiSelectContainer ul li{
+display:block;
+float:none !important;
+cursor:pointer;
+padding:0 !important;
+margin:0 !important;
+font-size:11px;
+}
+div.multiSelectContainer ul li a{
+position:static !important;
+color:#444;
+background:#fff;
+width:auto;
+height:auto;
+margin:0 !important;
+padding:0 0 0 2px;
+line-height:1.25em;
+text-align:left;
+letter-spacing:normal;
+}
+div.multiSelectContainer ul li a:hover,div.multiSelectContainer ul li a.active{
+background:#39f;
+color:#fff;
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="User's Form Layout">
+		<message>
+			<![CDATA[CONTENT USER FORM LAYOUT]]>
+		</message>
+	</layout>
+	<state>
+		<name>User's Form Layout ( jSeblod CCK )</name>
+		<description>CONTENT USER FORM LAYOUT</description>
+		<url />
+		<params />
+	</state>
+
+</metadata>

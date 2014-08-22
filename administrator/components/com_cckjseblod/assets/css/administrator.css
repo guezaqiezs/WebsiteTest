@@ -1,0 +1,631 @@
+/**
+* @author       	http://www.seblod.com
+* @copyright		Copyright (C) 2011 SEBLOD. All Rights Reserved.
+* @package			SEBLOD 1.x (CCK for Joomla!)
+**/
+
+input, select, textarea {
+	padding-left:1px;
+	padding-top:1px;
+	padding-bottom:1px;
+}
+
+div.width-25 { width: 25%; }
+div.width-75 { width: 75%; }
+div.width-100 { width: 100%; }
+
+div.header {
+	color: #000000 !important;	
+}
+
+table.toolbar a, table.toolbar a:visited  {
+	color: #000000 !important;
+	font-weight: bold;
+}
+
+#submenu li a, #submenu li a:visited, #submenu span.nolink {
+	border-right:1px solid #CCCCCC;
+	cursor:pointer;
+	color: #000000 !important;
+	font-weight:bold;
+	line-height:1.6em;
+	padding:0 15px;
+}
+
+#mc-submenu li a, #mc-submenu li a:visited, #mc-submenu span.nolink {
+	color: #FFFFFF !important;
+}
+
+.header_jseblod {
+	border: 1px solid #DDDDDD;
+	color: #6cc634;
+	font-style: italic;
+	background-color: #FBFBFB;
+	margin-top: 10px;
+	margin-bottom: 1px;
+	display: block;
+	font-weight: bold;
+	padding-left: 26px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.legend-border {
+	border: 1px solid #CCCCCC;
+	color: #000000;
+	padding: 6px 9px 6px 9px;
+	font-style: italic;
+	background-color: #FBFBFB;
+}
+
+.modal-bg-toolbar {
+	background-color: #FBFBFB;
+}
+
+.tool-tip {
+	max-width: 250px !important;
+}
+
+.pane-sliders .content { background: #f6f6f6; background-color: #ffffff !important; }
+
+.search-area  li {
+}
+
+.filter-margin {
+	margin-bottom: 3px;
+}
+
+.keydefault {
+	background-image: url(../../../../templates/khepri/images/menu/icon-16-default.png);
+	background-repeat: no-repeat;
+}
+
+.display-yes {
+	display: block;
+}
+
+.display-no {
+	display: none;
+}
+
+.quick-edit {
+	display: none;
+}
+
+.categoryNoColor {
+	width: 58px;
+	height: 12px;
+	color: #999999;
+	border: 1px dashed #CCCCCC;
+	padding-top:3px;
+	padding-bottom:3px;
+	vertical-align: middle;
+}
+
+.itemNoColor {
+	width: 18px;
+	height: 12px;
+	color: #999999;
+	border: 1px dashed #CCCCCC;
+	padding-top:3px;
+	padding-bottom:3px;
+	vertical-align: middle;
+}
+
+.typeNoColor {
+	width: 18px;
+	height: 12px;
+	color: #999999;
+	border: 1px dashed #CCCCCC;
+	padding-top:3px;
+	padding-bottom:3px;
+	vertical-align: middle
+}
+
+.templateNoColor {
+	width: 18px;
+	height: 12px;
+	color: #999999;
+	border: 1px dashed #CCCCCC;
+	padding-top:3px;
+	padding-bottom:3px;
+	vertical-align: middle
+}
+
+fieldset.adminform_jseblod {
+border: 1px dashed #FFD700;
+margin: 0 10px 10px 10px;
+padding: 0px;
+}
+
+fieldset.adminform_error {
+font-weight:bold;
+background:#E6C0C0 url(../../../../templates/khepri/images/notice-alert.png) no-repeat scroll 4px top;
+border-bottom:3px solid #DE7A7B;
+border-top:3px solid #DE7A7B;
+border-left: 0px;
+border-right: 0px;
+color:#CC0000;
+margin: 0 10px 0px 10px;
+}
+
+.available-passed {
+	border: 1px dashed green;
+	background-color: #cfc;
+	border-color: #0c0;
+}
+.available-failed {
+	border: 1px dashed red;
+	background-color: #fcc;
+	border-color: #c00;
+}
+.available-enabled {
+	border: 1px dashed gold;
+	background-color: #ffd;
+	border-color: #FFD700;
+}
+
+input.upload-package {
+	background-color: #fff; 
+	/*border: 1px solid #FFD700;*/
+}
+
+input.required-enabled {
+	background-color: #ffd; 
+	border: 1px solid #FFD700;
+}
+
+textarea.required-enabled {
+	background-color: #ffd; 
+	border: 1px solid #FFD700;
+}
+ 
+select.required-enabled {
+	background-color: #ffd; 
+	border: 1px solid #FFD700;
+}
+ 
+input.required-disabled {
+	color: #888;
+	background-color: #ffd; 
+	border: 1px solid #FFD700;
+}
+
+textarea.required-disabled {
+	color: #888;
+	background-color: #ffd;
+	border: 1px solid #FFD700;
+}
+
+select.required-disabled {
+	color: #888;
+	background-color: #ffd; 
+	border: 1px solid #FFD700;
+}
+
+input.notrequired-disabled {
+	color: #888;
+	background-color: #fff; 
+	border: 1px solid #FFD700;
+}
+
+textarea.notrequired-disabled {
+	color: #888;
+	background-color: #fff;
+	border: 1px solid #FFD700;
+}
+
+select.notrequired-disabled {
+	color: #888;
+	background-color: #fff; 
+	border: 1px solid #FFD700;
+}
+
+span.note_jseblod {
+	display: block;
+	background: #ffd;
+	padding: 5px;
+	color: #666;
+}
+
+span.note2_jseblod {
+	display: block;
+	background: #FBFBFB;
+	padding: 5px;
+	color: #666;
+}
+
+div.width-25 { width: 25%; }
+div.width-25 { width: 25%; }
+
+/** CPANEL::BEGIN **/
+
+#cpanel div.icon_jseblod {
+	text-align: center;
+	float: left;
+}
+
+#cpanel div.icon_jseblod a {
+	display: block;
+	float: left;
+	border: 1px solid #f0f0f0;
+	height: 49px;
+	width: 108px;
+	color: #666;
+	vertical-align: middle;
+	text-decoration: none;
+}
+
+#cpanel div.icon_jseblod a:hover {
+	border-left: 1px solid #eee;
+	border-top: 1px solid #eee;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	background: #f9f9f9;
+	color: #0B55C4;
+}
+
+table.admintable td 					 { padding: 3px; }
+table.admintable td.key_jseblod,
+table.admintable td.paramlist_key_jseblod {
+	background-color: #f6f6f6;
+	color: #666;
+	text-align: center;
+	font-weight: bold;
+	border-bottom: 1px solid #e9e9e9;
+	border-right: 1px solid #e9e9e9;
+}
+
+table.admintable td 					 { padding: 3px; }
+table.admintable td.keyy_jseblod,
+table.admintable td.paramlist_keyy_jseblod {
+	background-color: #f6f6f6;
+	color: #666;
+	text-align: right;
+	font-weight: bold;
+	border-bottom: 1px solid #e9e9e9;
+	border-right: 1px solid #e9e9e9;
+}
+
+.keytext_jseblod {
+	color: #666;
+	text-align: left;
+	font-weight: bold;
+}
+
+table.adminlist thead th a,
+table.adminlist thead th a:visited {
+	color: #000000 !important;
+}
+
+/** CPANEL::END **/
+
+
+.message-notice-jseblod {
+font-weight:bold;
+text-indent:30px;
+list-style-image:none;
+list-style-position:outside;
+list-style-type:none;
+margin-bottom:10px;
+padding:10px;
+background:#EFE7B8 url(../../../../templates/khepri/images/notice-note.png) no-repeat scroll 4px top;
+border-bottom:3px solid #F0DC7E;
+border-top:3px solid #F0DC7E;
+color:#CC0000;
+}
+
+.message-message-jseblod {
+font-weight:bold;
+text-indent:30px;
+list-style-image:none;
+list-style-position:outside;
+list-style-type:none;
+margin-bottom:10px;
+padding:10px;
+background:#C3D2E5 url(../../../../templates/khepri/images/notice-info.png) no-repeat scroll 4px center;
+border-bottom:3px solid #84A7DB;
+border-top:3px solid #84A7DB;
+color:#0055BB;
+}
+
+.reducemargin {
+	margin-bottom: 0 !important;
+}
+
+/** TOOLBAR::BEGIN **/
+/*
+.toolbar-save_jseblod {
+ display: block; float: right;
+ border: 1px solid #fbfbfb;
+ padding: 1px 5px;
+ cursor: pointer;
+ background-color: #fff;
+ background-image: url(../../../../templates/khepri/images/toolbar/icon-32-save.png); 
+ width: 32px;
+ height: 32px;
+}
+
+.toolbar-apply_jseblod {
+ display: block; float: right;
+ border: 1px solid #fbfbfb;
+ padding: 1px 5px;
+ cursor: pointer;
+ background-color: #fff;
+ background-image: url(../../../../templates/khepri/images/toolbar/icon-32-apply.png); 
+ width: 32px;
+ height: 32px;
+}
+
+.toolbar-cancel_jseblod {
+ display: block; float: right;
+ border: 1px solid #fbfbfb;
+ padding: 1px 5px;
+ cursor: pointer;
+ background-color: #fff;
+ background-image: url(../../../../templates/khepri/images/toolbar/icon-32-cancel.png) no-repeat fixed center top; 
+ width: 32px;
+ height: 32px;
+}
+
+.toolbar-cancel_jseblod2 {
+ display: block; float: right;
+  border: 1px solid #fbfbfb;
+ padding: 1px 5px;
+ cursor: pointer;
+ background-color: #fff;
+ background-image: url(../../../../templates/khepri/images/toolbar/icon-32-cancel.png) no-repeat fixed center top;
+  width: 32px;
+ height: 32px; 
+}
+.myicon-32-save	{ 
+
+}
+*/
+.title-left {
+float: left;
+vertical-align: middle;
+}
+.title-right {
+float: right;
+vertical-align: middle;
+}
+.title-right2 {
+float: right;
+vertical-align: bottom;
+}
+.icon-16-pencil {
+background-image: url(../../assets/images/icon-16-pencil.png);
+background-repeat: no-repeat;
+}
+
+
+
+
+/** TEMPLATES && TEMPLATE::BEGIN **/
+
+.button_blank {
+	color: #666;
+	background-color: #fff;
+	font-size: 11px;
+	font-weight: bold;
+	text-align:center;
+	
+	cursor: pointer;
+}
+.button_jseblod {
+	width: 40px;
+	color: #666;
+	background-color: #fff;
+	font-size: 10px;
+	font-weight: bold;
+}
+.button_big_jseblod {
+	width: 83px;
+	color: #666;
+	background-color: #fff;
+	font-size: 10px;
+	font-weight: bold;
+}
+.button2_jseblod {
+	width: 40px;
+	color: #666;
+	background-color: #F6F6F6;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+/** TEMPLATES && TEMPLATE::END **/
+
+
+/** TYPE && TYPE::BEGIN **/
+
+.counter_jseblod {
+  font-family:Georgia, Arial, Helvetica, sans-serif;
+  font-weight:bold;
+  font-size: 13px;
+  color:#55C40B;
+}
+.tip_jseblod {
+  font-family:Georgia, Arial, Helvetica, sans-serif;
+  font-weight:bold;
+}
+
+/** TYPE && TYPE::END **/
+
+
+/** MODULES && MODULE::BEGIN **/
+
+table.admintable td 					 { padding: 3px; }
+table.admintable td.left_jseblod,
+table.admintable td.paramlist_left_jseblod {
+	background-color: #f6f6f6;
+	color: #666;
+	text-align: left;
+	font-weight: bold;
+	border-bottom: 1px solid #e9e9e9;
+	border-right: 1px solid #e9e9e9;
+}
+
+div.toggle_jseblod {
+	cursor: default;
+}
+
+div.toggler_jseblod {
+	cursor: default;
+  text-align: left;
+	margin: 0 0 4px 0;
+	padding: 3px 5px 1px;
+}
+
+#s_element_jseblod {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+div.element  {
+	margin:0px;
+	padding:4px;
+}
+
+div.element_jseblod  {
+
+}
+
+/** MODULES && MODULE::END **/
+
+
+/** FOOTER QUICK::BEGIN **/
+
+div.right_jseblod {
+	text-align: right;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+/** FOOTER QUICK::END **/
+
+
+/** FOOTER COPYRIGHT::BEGIN **/
+
+div.copyright_jseblod {
+	color: #999;
+	text-align: center;
+	font-size: 90%;
+}
+
+/** FOOTER COPYRIGHT::END **/
+
+
+
+input.disabled_jseblod {
+  background-color: #fff;
+}
+
+.options_url_jseblod {
+  margin-top: 2px;
+}
+
+#deloptions_jseblod {
+  margin-top: 8px;
+}
+
+#options_jseblod {
+  padding-top: 1px;
+}
+
+#table.admintable div.key {
+	background-color: #f6f6f6;
+	color: #666;
+	text-align: center;
+	font-weight: bold;
+	border-bottom: 1px solid #e9e9e9;
+	border-right: 1px solid #e9e9e9;
+}
+
+#fromoption2 {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+#getTmplLayout a { 
+	font-weight: bold;
+}
+
+#ItemLayout {
+
+}
+#EditorLayout {
+}
+#PushLayout {
+overflow: auto;
+}
+#PushLayout.ajax-loading {
+	padding: 20px 0;
+	background: url(../../assets/images/spinner.gif) no-repeat center;
+}
+#fields-container.ajax-loading {
+	background: url(../../assets/images/spinner.gif) no-repeat;
+}
+
+.button2-left .jseblod {
+	background: url( ../../assets/images/jseblod/j_button2_jseblod.png ) 100% 0 no-repeat;
+}
+
+
+a.minibutton img {
+	border-color:#FBFBFB;
+	border-style:solid;
+	border-width:1px;
+}
+a.minibutton img:hover {
+	border-color:#EEEEEE #CCCCCC #CCCCCC #EEEEEE;
+	border-style:solid;
+	border-width:1px;
+}
+
+table.zero_jseblod {
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+table.zero_jseblod td {
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+
+/** List **/
+
+table.admintable tr.row0 td {
+	background-color: #ffffff;
+	height: 25px;
+}
+table.admintable tr.row1 td {
+	background-color: #f9f9f9;
+	height: 25px;
+}
+
+
+span.add {
+	cursor: pointer;
+	background:url("../../../../../media/jseblod/_icons/add-square.png") no-repeat scroll 0 0 transparent;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+span.del {
+	cursor: pointer;
+	background:url("../../../../../media/jseblod/_icons/del-square.png") no-repeat scroll 0 0 transparent;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	vertical-align: middle;
+}

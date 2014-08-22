@@ -1,0 +1,112 @@
+/***
+ *  - mooRainbow: defaultCSS
+ * author: w00fz <w00fzIT@gmail.com>
+ */
+
+#mooRainbow {
+  color: #666;
+}
+
+.moor-box {
+	width: 352px; /* default 390x310 */
+	height: 170px; 
+	border: 1px solid #ccc; 
+	background-color: #fff;
+}
+.moor-overlayBox {
+	width: 150px; /* default 256x256 */
+	height: 150px; 
+	margin-top: 9px; 
+	margin-left: 9px;
+	border: 1px solid #ccc;
+}
+.moor-slider {
+	border: 1px solid #ccc;
+	margin-top: 9px; 
+	margin-left: 174px; /* default 280 */
+	width: 19px; /* default 19x256 */
+	height: 150px;
+	cursor: n-resize;
+}
+.moor-colorBox {
+	border: 1px solid #ccc; 
+	width: 59px; 
+	height: 34px; 
+	margin-top: 9px; 
+	margin-left: 208px; /* default 315 */
+}
+.moor-chooseColor { /* Top Box Color, the choosen one */
+	margin-top: 10px; 
+	margin-left: 209px; /* default 316 */
+	width: 59px; 
+	height: 34px;
+}
+.moor-currentColor { /* Bottom Box Color, the backup one */
+	margin-top: 9px;
+	margin-left: 282px; /* default 316 */
+	width: 59px; 
+	height: 34px;
+	border: 1px solid #ccc; 
+}
+.moor-okButton {
+	margin-top: 141px;
+	margin-left: 320px;
+	background: #fff;
+	width: 16px;
+	height: 16px;
+	border: 0; 
+  background-image: url(images/color.png);
+  background-repeat: no-repeat;
+}
+#mooRainbow label {
+	font-weight: bold;
+}
+/* Following are just <label> */
+.moor-rLabel {
+	margin-top: 60px;
+	margin-left: 216px;
+}
+.moor-gLabel {
+	margin-top: 85px;
+	margin-left: 215px;
+}
+.moor-bLabel {
+	margin-top: 110px;
+	margin-left: 216px;
+}
+.moor-HueLabel {
+	margin-top: 60px;
+	margin-left: 290px;
+}
+.moor-SatuLabel {
+	margin-top: 85px;
+	margin-left: 290px;
+}
+.moor-BrighLabel {
+	margin-top: 110px;
+	margin-left: 290px;
+}
+.moor-hexLabel {
+	margin-top: 142px;
+	margin-left: 216px;
+}
+
+/* <input> */
+.moor-rInput, .moor-gInput, .moor-bInput, .moor-HueInput, .moor-SatuInput, .moor-BrighInput { 
+	width: 30px;
+}
+.moor-hexInput {
+	width: 55px;
+}
+.moor-cursor {
+	background-image: url(images/moor_cursor.gif); 
+	width: 12px;
+	height: 12px;
+}
+.moor-arrows {
+	background-image: url(images/moor_arrows.gif);
+	top: 9px; 
+	left: 164px; /* default 270 */
+	width: 41px;
+	height: 9px;
+}

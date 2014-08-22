@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="User's Homepage Layout">
+		<message>
+			<![CDATA[CONTENT USER HOME LAYOUT]]>
+		</message>
+	</layout>
+	<state>
+		<name>User's Homepage Layout ( jSeblod CCK )</name>
+		<description>CONTENT USER HOME LAYOUT</description>
+		<url />
+		<params />
+	</state>
+
+</metadata>

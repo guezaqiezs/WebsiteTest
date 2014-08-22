@@ -1,0 +1,24 @@
+/**
+* @author       	http://www.seblod.com
+* @copyright		Copyright (C) 2011 SEBLOD. All Rights Reserved.
+* @package			SEBLOD 1.x (CCK for Joomla!)
+**/
+
+span.add {
+	cursor: pointer;
+	background:url("../../../../media/jseblod/_icons/add-square.png") no-repeat scroll 0 0 transparent;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+span.del {
+	cursor: pointer;
+	background:url("../../../../media/jseblod/_icons/del-square.png") no-repeat scroll 0 0 transparent;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	vertical-align: middle;
+}
+

@@ -1,0 +1,137 @@
+/* Calendar: a Javascript class for Mootools that adds accessible and unobtrusive date pickers to your form elements <http://electricprism.com/aeron/calendar> */
+/* Alternate CSS for Calendar (navigation: 2), Copyright (c) 2007 Aeron Glemann <http://electricprism.com/aeron> */
+
+input.gray-alt,
+select.gray-alt {
+	width: 114px;
+}
+
+button.gray-alt {
+	background: url(gray-icon.gif);
+	border: 0;
+	cursor: pointer;
+	/* float: left; */
+	height: 20px;
+	margin-left: 11px;
+	padding-top: 7px;
+	width: 20px;
+}
+button.gray-alt:hover,
+button.gray-alt.active {
+	background-position: 0 20px;
+}
+
+div.gray-alt {
+	background: url(gray-main.png);
+	height: 195px;
+	padding: 0 6px;
+	text-align: center;
+	width: 147px;
+}	
+	div.gray-alt * {
+		margin: 0;
+		padding: 0;
+	}	
+	div.gray-alt div {
+		background: none !important;
+		cursor: move;
+		height: 185px;
+		overflow: hidden;
+		padding-top: 10px;
+		position: relative;
+		width: 147px;
+	}	
+	
+	div.gray-alt caption {
+		color: #999;
+		font: normal 12px/16px Arial, Helvetica, sans-serif;
+		overflow: hidden;
+		text-align: center;
+		width: 100%;
+	}
+	div.gray-alt caption a {
+		cursor: pointer;
+		display: block;
+		height: 12px;
+		overflow: hidden;
+		position: absolute;
+		text-indent: -100px;
+		top: 17px;
+		width: 11px;
+	}
+	div.gray-alt caption a.prev {
+		background-image: url(gray-prev.gif);
+		left: 0;
+	}
+	div.gray-alt caption a.next {
+		background-image: url(gray-next.gif);
+		right: 0;
+	}
+	div.gray-alt caption a:hover {
+		background-position: 0 12px;
+	}
+	div.gray-alt caption span {
+		padding-top: 6px;
+		position: relative;
+		text-align: center;
+	}
+	div.gray-alt caption span.month {
+		float: left;
+		width: 84px;
+	}
+	div.gray-alt caption span.month:after {
+		content: '';
+	}
+	div.gray-alt caption span a {
+		top: 8px;
+	}
+	div.gray-alt caption span.year {
+		float: right;
+		width: 63px;
+	}
+
+	div.gray-alt table {
+		background: #FFF;
+		border: 0;
+		border-collapse: collapse;
+		border-spacing: 0;
+		cursor: default;
+		margin: 0 auto;
+		overflow: hidden;
+		width: 147px;
+	}
+	div.gray-alt td,
+	div.gray-alt th {
+		border: 0;
+		color: #999;
+		font: normal 12px Arial, Helvetica, sans-serif;
+		height: 21px;
+		text-align: center;
+		width: 21px;
+	}
+	div.gray-alt td {
+		background: url(gray-td.gif);
+		color: #FFF;
+		font-size: 11px;
+	}
+	div.gray-alt td.invalid {
+		color: #999;
+	}
+	div.gray-alt td.valid {
+		background: url(gray-valid.gif);
+		color: #999;
+		cursor: pointer;
+	}
+	div.gray-alt td.hilite {
+		background: url(gray-hilite.gif);
+	}
+	div.gray-alt td.inactive {
+		background: url(gray-td.gif) 0 100%;
+		color: #999;
+	}
+	div.gray-alt td.active,
+	div.gray-alt td.hover {
+		background: url(gray-valid.gif) 0 100%;
+		color: #999;
+		cursor: pointer;
+	}

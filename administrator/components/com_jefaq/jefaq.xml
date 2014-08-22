@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" method="upgrade" version="1.5.0">
+	<name>JEFAQ</name>
+	<license>GNU General Public License v2, see LICENSE.php</license>
+	<author>J-Extension</author>
+	<copyright>[2010] JExtn</copyright>
+	<creationDate>June 05, 2010</creationDate>
+	<authorEmail>contact@jextn.com</authorEmail>
+	<authorUrl>http://www.jextn.com</authorUrl>
+	<version>1.2.1</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>
+	JE FAQ is an easy to use but powerful and excellent FAQ management. Our core competency from our front end and backend features will make you to suitable because we take care of your needs in the FAQ Joomla component needs. This is where we extending the suitability in Joomla.
+	</description>
+
+	<!-- Site Main File Copy Section -->
+	<files folder="site">
+			<filename>index.html</filename>
+			<filename>jefaq.php</filename>
+
+			<filename>controllers/faq.php</filename>
+			<filename>controllers/index.html</filename>
+
+			<filename>models/faq.php</filename>
+			<filename>models/index.html</filename>
+
+			<filename>views/index.html</filename>
+
+			<filename>views/faq/index.html</filename>
+			<filename>views/faq/view.html.php</filename>
+			<filename>views/faq/tmpl/default.php</filename>
+			<filename>views/faq/tmpl/index.html</filename>
+
+			<folder>assets</folder>
+	</files>
+
+	<languages folder="site">
+		<language tag="en-GB">en-GB.com_jefaq.ini</language>
+	</languages>
+
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu img="components/com_jefaq/assets/images/small_icon_faq.png" link="option=com_jefaq">JE FAQ</menu>
+
+		<languages folder="admin">
+			<language tag="en-GB">en-GB.com_jefaq.ini</language>
+		</languages>
+
+		<!-- Administration Main File Copy Section -->
+		<files folder="admin">
+			<filename>admin.jefaq.php</filename>
+			<filename>index.html</filename>
+			<filename>install.mysql.sql</filename>
+			<filename>uninstall.mysql.sql</filename>
+
+			<filename>controllers/faq.php</filename>
+			<filename>controllers/index.html</filename>
+
+			<filename>models/faq.php</filename>
+			<filename>models/index.html</filename>
+
+			<filename>tables/faq.php</filename>
+			<filename>tables/index.html</filename>
+
+			<filename>views/index.html</filename>
+
+			<filename>views/faq/index.html</filename>
+			<filename>views/faq/view.html.php</filename>
+			<filename>views/faq/tmpl/default.php</filename>
+			<filename>views/faq/tmpl/form.php</filename>
+			<filename>views/faq/tmpl/index.html</filename>
+
+			<folder>assets</folder>
+		</files>
+	</administration>
+
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install.mysql.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">uninstall.mysql.sql</file>
+		</sql>
+	</uninstall>
+</install>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" client="administrator" version="1.5">
+	
+	<name>Extended Quick Icons - SEBLOD 1.x</name>
+	<author>Octopoos</author>
+	<creationDate>April 2009</creationDate>
+	<authorEmail>contact@seblod.com</authorEmail>
+	<authorUrl>http://www.seblod.com</authorUrl>
+	<copyright>Copyright (C) 2011 SEBLOD. All Rights Reserved.</copyright>
+	<license>GNU General Public License version 2 or later.</license>
+	<version>1.8.5</version>
+	<description>Extended Quick Icons - SEBLOD 1.x
+	<![CDATA[
+	<a href="index.php?option=com_modules&client=1">(don't forget to publish it, and select the "icon" position) click here</a>
+	]]>
+	</description>
+	
+	<files>
+		<filename module="mod_cckjseblod_quickicon">mod_cckjseblod_quickicon.php</filename>
+		<filename>index.html</filename>
+		<filename>assets/index.html</filename>
+		<filename>assets/images/index.html</filename>
+		<filename>assets/images/icon-48-cckjseblod.png</filename>
+		<filename>assets/images/icon-48-content.png</filename>
+		<filename>assets/images/icon-48-items.png</filename>
+		<filename>assets/images/icon-48-searchs.png</filename>
+		<filename>assets/images/icon-48-templates.png</filename>
+		<filename>assets/images/icon-48-types.png</filename>
+	</files>
+	
+	<params>
+		<param type="spacer" default="JSEBLOD COMPONENT ICONS" />
+		<param name="mode" type="radio" default="2" label="Mode" description="DESCRIPTION MODE">
+ 			<option value="2">Extended</option>
+			<option value="1">Advanced</option>
+ 			<option value="0">Simple</option>
+ 		</param>
+		<param type="spacer" default=" " />
+		<param type="spacer" default="JOOMLA COMPONENTS ICONS" />
+		<param name="enable01" type="radio" default="0" label="Enable (01)" description="DESCRIPTION ENABLE">
+			<option value="0">No</option>
+ 			<option value="1">Yes</option>
+ 		</param>
+		<param name="component01" type="sql" default="" label="Component (01)" description="DESCRIPTION COMPONENT" query="SELECT CONCAT(name,
+		CONCAT('||', CONCAT(link, CONCAT('||', admin_menu_img)))) as myval, name FROM #__components WHERE name != '' AND link != '' AND link !=
+		'option=com_user' AND link != 'option=com_wrapper' ORDER BY name"
+		key_field="myval" value_field="name" />
+		<param name="icon01" type="imagelist" default="" label="Icon (01)" description="DESCRIPTION ICON" directory="administrator/templates/khepri/images/header/" exclude="icon-48-generic.png" stripext="" hide_none="true" />
+		<param type="spacer" default=" " />
+		<param name="enable02" type="radio" default="0" label="Enable (02)" description="DESCRIPTION ENABLE">
+			<option value="0">No</option>
+ 			<option value="1">Yes</option>
+ 		</param>
+		<param name="component02" type="sql" default="" label="Component (02)" description="DESCRIPTION COMPONENT" query="SELECT CONCAT(name,
+		CONCAT('||', CONCAT(link, CONCAT('||', admin_menu_img)))) as myval, name FROM #__components WHERE name != '' AND link != '' AND link !=
+		'option=com_user' AND link != 'option=com_wrapper' ORDER BY name"
+		key_field="myval" value_field="name" />
+		<param name="icon02" type="imagelist" default="" label="Icon (02)" description="DESCRIPTION ICON" directory="administrator/templates/khepri/images/header/" exclude="icon-48-generic.png" stripext="" hide_none="true" />
+		<param type="spacer" default=" " />
+		<param name="enable03" type="radio" default="0" label="Enable (03)" description="DESCRIPTION ENABLE">
+			<option value="0">No</option>
+ 			<option value="1">Yes</option>
+ 		</param>
+		<param name="component03" type="sql" default="" label="Component (03)" description="DESCRIPTION COMPONENT" query="SELECT CONCAT(name,
+		CONCAT('||', CONCAT(link, CONCAT('||', admin_menu_img)))) as myval, name FROM #__components WHERE name != '' AND link != '' AND link !=
+		'option=com_user' AND link != 'option=com_wrapper' ORDER BY name"
+		key_field="myval" value_field="name" />
+		<param name="icon03" type="imagelist" default="" label="Icon (03)" description="DESCRIPTION ICON" directory="administrator/templates/khepri/images/header/" exclude="icon-48-generic.png" stripext="" hide_none="true" />
+		<param type="spacer" default=" " />
+		<param name="enable04" type="radio" default="0" label="Enable (04)" description="DESCRIPTION ENABLE">
+			<option value="0">No</option>
+ 			<option value="1">Yes</option>
+ 		</param>
+		<param name="component04" type="sql" default="" label="Component (04)" description="DESCRIPTION COMPONENT" query="SELECT CONCAT(name,
+		CONCAT('||', CONCAT(link, CONCAT('||', admin_menu_img)))) as myval, name FROM #__components WHERE name != '' AND link != '' AND link !=
+		'option=com_user' AND link != 'option=com_wrapper' ORDER BY name"
+		key_field="myval" value_field="name" />
+		<param name="icon04" type="imagelist" default="" label="Icon (04)" description="DESCRIPTION ICON" directory="administrator/templates/khepri/images/header/" exclude="icon-48-generic.png" stripext="" hide_none="true" />
+		<param type="spacer" default=" " />
+		<param name="enable05" type="radio" default="0" label="Enable (05)" description="DESCRIPTION ENABLE">
+			<option value="0">No</option>
+ 			<option value="1">Yes</option>
+ 		</param>
+		<param name="component05" type="sql" default="" label="Component (05)" description="DESCRIPTION COMPONENT" query="SELECT CONCAT(name,
+		CONCAT('||', CONCAT(link, CONCAT('||', admin_menu_img)))) as myval, name FROM #__components WHERE name != '' AND link != '' AND link !=
+		'option=com_user' AND link != 'option=com_wrapper' ORDER BY name"
+		key_field="myval" value_field="name" />
+		<param name="icon05" type="imagelist" default="" label="Icon (05)" description="DESCRIPTION ICON" directory="administrator/templates/khepri/images/header/" exclude="icon-48-generic.png" stripext="" hide_none="true" />
+	</params>
+	<params group="advanced">
+		<param name="cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+	</params>
+	
+</install>

@@ -1,0 +1,13 @@
+.validation-advice {
+	color: #c00;
+}
+.validation-passed {
+	border: 1px solid green;
+	background-color: #cfc;
+	border-color: #0c0;
+}
+.validation-failed {
+	border: 1px solid red;
+	background-color: #fcc;
+	border-color: #c00;
+}

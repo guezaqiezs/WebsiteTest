@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" client="administrator" version="1.5">
+
+	<name>Extended Admin Menu - SEBLOD 1.x</name>
+	<author>Octopoos</author>
+	<creationDate>July 2009</creationDate>
+	<authorEmail>contact@seblod.com</authorEmail>
+	<authorUrl>http://www.seblod.com</authorUrl>
+	<copyright>Copyright (C) 2011 SEBLOD. All Rights Reserved.</copyright>
+	<license>GNU General Public License version 2 or later.</license>
+	<version>1.8.5</version>
+	<description>Extended Admin Menu - SEBLOD 1.x
+	<![CDATA[
+	<a href="index.php?option=com_modules&client=1">(don't forget to publish it, and select the "menu" position) click here</a>
+	]]>
+	</description>
+
+	<files>
+		<filename module="mod_cckjseblod_menu">mod_cckjseblod_menu.php</filename>
+		<filename>cckjseblod_menu.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>en-GB.mod_cckjseblod_menu.ini</filename>
+		<filename>assets/index.html</filename>
+		<filename>assets/css/index.html</filename>
+		<filename>assets/css/cckjseblod_menu.css</filename>
+		<filename>assets/images/index.html</filename>
+		<filename>assets/images/icon-16-jseblod.png</filename>
+		<filename>assets/images/j_arrow.png</filename>
+		<filename>assets/js/index.html</filename>
+		<filename>assets/js/cckjseblod_index.js</filename>
+		<filename>assets/js/cckjseblod_menu.js</filename>
+	</files>
+
+	<languages>
+			<language tag="en-GB">en-GB.mod_cckjseblod_menu.ini</language>
+	</languages>
+
+	<params>
+		<param type="spacer" default="JSEBLOD COMPONENT LINKS" />
+		<param name="mode" type="radio" default="2" label="Mode" description="DESCRIPTION MODE">
+ 			<option value="2">Extended</option>
+			<option value="1">Advanced</option>
+ 			<option value="0">Simple</option>
+ 		</param>
+ 		<param name="menutitle" type="text" default="CCK" label="Menu Title" description="DESCRIPTION MENU TITLE"/>
+		<param type="spacer" default="JSEBLOD COMPONENT SUBMENU LINKS" />
+		<param name="modenew" type="radio" default="1" label="New" description="DESCRIPTION SUBMENU NEW">
+			<option value="0">No</option>
+ 			<option value="1">Yes</option>
+ 		</param>
+		<param name="modecat" type="radio" default="1" label="Categories" description="DESCRIPTION SUBMENU CATEGORIES">
+			<option value="0">No</option>
+ 			<option value="1">Yes</option>
+ 		</param>
+		<param name="modesitemenu" type="radio" default="0" label="New Menu" description="DESCRIPTION SUBMENU NEW MENU">
+			<option value="0">No</option>
+ 			<option value="1">Yes</option>
+ 		</param>
+		<param name="modesitemodule" type="radio" default="0" label="New Module" description="DESCRIPTION SUBMENU NEW MODULE">
+			<option value="0">No</option>
+ 			<option value="1">Yes</option>
+ 		</param>
+		<param name="modeexternal" type="radio" default="1" label="SEBLOD.com" description="DESCRIPTION SUBMENU JSEBLOD">
+			<option value="0">No</option>
+ 			<option value="1">Yes</option>
+ 		</param>
+		<param type="spacer" default=" " />
+		<param type="spacer" default="JSEBLOD COMPONENT ADDON LINKS" />
+		<param name="addon_webservice" type="list" default="0" label="Tasks + WebServices" description="DESCRIPTION SUBMENU WEBSERVICE">
+			<option value="0">No</option>
+ 			<option value="1">Simple</option>
+			<option value="2">Intermediate</option>
+			<option value="3">Advanced</option>
+ 		</param>
+		<param type="spacer" default=" " />
+		<param type="spacer" default="JOOMLA COMPONENTS LINKS" />
+		<param name="free01" type="radio" default="0" label="Enable (01)" description="DESCRIPTION ENABLE">
+			<option value="0">No</option>
+ 			<option value="1">Yes</option>
+ 		</param>
+		<param name="free01_title" type="text" default="Title 01" label="Title (01)" description="DESCRIPTION TITLE"/>
+		<param name="free01_url" type="text" default="index.php" label="Link (01)" description="DESCRIPTION LINK"/>
+		<param name="free01_icon" type="imagelist" default="" label="Icon (01)" description="DESCRIPTION ICON" directory="administrator/templates/khepri/images/menu/" exclude="icon-16-generic.png" stripext="" hide_none="true" />
+		<param type="spacer" default=" " />
+		<param name="enable01" type="radio" default="0" label="Enable (02)" description="DESCRIPTION ENABLE">
+			<option value="0">No</option>
+ 			<option value="1">Yes</option>
+ 		</param>
+		<param name="component01" type="sql" default="" label="Component (02)" description="DESCRIPTION COMPONENT" query="SELECT CONCAT(name,
+		CONCAT('||', CONCAT(link, CONCAT('||', admin_menu_img)))) as myval, name FROM #__components WHERE name != '' AND link != '' AND link !=
+		'option=com_user' AND link != 'option=com_wrapper' ORDER BY name"
+		key_field="myval" value_field="name" />
+		<param type="spacer" default=" " />
+		<param name="free02" type="radio" default="0" label="Enable (03)" description="DESCRIPTION ENABLE">
+			<option value="0">No</option>
+ 			<option value="1">Yes</option>
+ 		</param>
+		<param name="free02_title" type="text" default="Title 03" label="Title (03)" description="DESCRIPTION TITLE"/>
+		<param name="free02_url" type="text" default="index.php" label="Link (03)" description="DESCRIPTION LINK"/>
+		<param name="free02_icon" type="imagelist" default="" label="Icon (03)" description="DESCRIPTION ICON" directory="administrator/templates/khepri/images/menu/" exclude="icon-16-generic.png" stripext="" hide_none="true" />
+		<param type="spacer" default=" " />		
+		<param name="enable02" type="radio" default="0" label="Enable (04)" description="DESCRIPTION ENABLE">
+			<option value="0">No</option>
+ 			<option value="1">Yes</option>
+ 		</param>
+		<param name="component02" type="sql" default="" label="Component (04)" description="DESCRIPTION COMPONENT" query="SELECT CONCAT(name,
+		CONCAT('||', CONCAT(link, CONCAT('||', admin_menu_img)))) as myval, name FROM #__components WHERE name != '' AND link != '' AND link !=
+		'option=com_user' AND link != 'option=com_wrapper' ORDER BY name"
+		key_field="myval" value_field="name" />
+		<param type="spacer" default=" " />
+		<param name="free03" type="radio" default="0" label="Enable (05)" description="DESCRIPTION ENABLE">
+			<option value="0">No</option>
+ 			<option value="1">Yes</option>
+ 		</param>
+		<param name="free03_title" type="text" default="Title 05" label="Title (05)" description="DESCRIPTION TITLE"/>
+		<param name="free03_url" type="text" default="index.php" label="Link (05)" description="DESCRIPTION LINK"/>
+		<param name="free03_icon" type="imagelist" default="" label="Icon (05)" description="DESCRIPTION ICON" directory="administrator/templates/khepri/images/menu/" exclude="icon-16-generic.png" stripext="" hide_none="true" />
+		<param type="spacer" default=" " />		
+		<param name="enable03" type="radio" default="0" label="Enable (06)" description="DESCRIPTION ENABLE">
+			<option value="0">No</option>
+ 			<option value="1">Yes</option>
+ 		</param>
+		<param name="component03" type="sql" default="" label="Component (06)" description="DESCRIPTION COMPONENT" query="SELECT CONCAT(name,
+		CONCAT('||', CONCAT(link, CONCAT('||', admin_menu_img)))) as myval, name FROM #__components WHERE name != '' AND link != '' AND link !=
+		'option=com_user' AND link != 'option=com_wrapper' ORDER BY name"
+		key_field="myval" value_field="name" />
+		<param type="spacer" default=" " />
+		<param name="free04" type="radio" default="0" label="Enable (07)" description="DESCRIPTION ENABLE">
+			<option value="0">No</option>
+ 			<option value="1">Yes</option>
+ 		</param>
+		<param name="free04_title" type="text" default="Title 07" label="Title (07)" description="DESCRIPTION TITLE"/>
+		<param name="free04_url" type="text" default="index.php" label="Link (07)" description="DESCRIPTION LINK"/>
+		<param name="free04_icon" type="imagelist" default="" label="Icon (07)" description="DESCRIPTION ICON" directory="administrator/templates/khepri/images/menu/" exclude="icon-16-generic.png" stripext="" hide_none="true" />
+		<param type="spacer" default=" " />		
+		<param name="enable04" type="radio" default="0" label="Enable (08)" description="DESCRIPTION ENABLE">
+			<option value="0">No</option>
+ 			<option value="1">Yes</option>
+ 		</param>
+		<param name="component04" type="sql" default="" label="Component (08)" description="DESCRIPTION COMPONENT" query="SELECT CONCAT(name,
+		CONCAT('||', CONCAT(link, CONCAT('||', admin_menu_img)))) as myval, name FROM #__components WHERE name != '' AND link != '' AND link !=
+		'option=com_user' AND link != 'option=com_wrapper' ORDER BY name"
+		key_field="myval" value_field="name" />
+		<param type="spacer" default=" " />
+		<param name="free05" type="radio" default="0" label="Enable (09)" description="DESCRIPTION ENABLE">
+			<option value="0">No</option>
+ 			<option value="1">Yes</option>
+ 		</param>
+		<param name="free05_title" type="text" default="Title 09" label="Title (09)" description="DESCRIPTION TITLE"/>
+		<param name="free05_url" type="text" default="index.php" label="Link (09)" description="DESCRIPTION LINK"/>
+		<param name="free05_icon" type="imagelist" default="" label="Icon (09)" description="DESCRIPTION ICON" directory="administrator/templates/khepri/images/menu/" exclude="icon-16-generic.png" stripext="" hide_none="true" />
+		<param type="spacer" default=" " />		
+		<param name="enable05" type="radio" default="0" label="Enable (10)" description="DESCRIPTION ENABLE">
+			<option value="0">No</option>
+ 			<option value="1">Yes</option>
+ 		</param>
+		<param name="component05" type="sql" default="" label="Component (10)" description="DESCRIPTION COMPONENT" query="SELECT CONCAT(name,
+		CONCAT('||', CONCAT(link, CONCAT('||', admin_menu_img)))) as myval, name FROM #__components WHERE name != '' AND link != '' AND link !=
+		'option=com_user' AND link != 'option=com_wrapper' ORDER BY name"
+		key_field="myval" value_field="name" />
+		
+	</params>
+	<params group="advanced">
+		<param name="cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+	</params>
+
+</install>

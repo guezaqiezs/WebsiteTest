@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="List Layout">
+		<message>
+			<![CDATA[CONTENT TYPE LIST LAYOUT]]>
+		</message>
+	</layout>
+	<state>
+		<name>Content Types. List Layout ( jSeblod CCK )</name>
+		<description>CONTENT TYPE LIST LAYOUT</description>
+		
+		<params addpath="/administrator/components/com_cckjseblod/elements">
+			<param name="action_mode" type="list" default="" label="Action" description="Choose a action mode... (if not: all action modes)">
+				<option value="">- Select Action Mode -</option>
+				<option value="0">Article Submission</option>
+				<option value="1">Category Submission</option>
+				<option value="2">User Registration</option>
+				<option value="4">User's Content</option>
+			</param>
+			<param name="category_id" type="typecategories" label="Type Category" description="Choose a Content Type category... (if not: all categories)" />
+			<param name="show_unpublished" type="radio" default="0" label="Show Unpublished" description="Show/Hide Unpublished Items">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param type="spacer" default=" " />
+			<param name="auto_redirect" type="radio" default="0" label="Auto Redirection" description="Show Item Form Edition instead of Item List when only one item listed.">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param name="@spacer" type="spacer" default="" label="" description="" />
+			<param name="orderby_sec" type="list" default="alpha" label="Primary Order" description="Order that the items will be displayed in.">
+				<option value="alpha">Title Alphabetical</option>
+				<option value="ralpha">Title Reverse-Alphabetical</option>
+			</param>
+			<param name="@spacer" type="spacer" default="" label="" description="" />
+			<param name=" " type="panelinfo" default="0" label="" description="PANEL INFO ELEMENT" />
+		</params>
+		<advanced addpath="/administrator/components/com_cckjseblod/elements">
+			<param name="show_headings" type="radio" default="1" label="Table Headings" description="Show/Hide the Table Headings">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			<param type="spacer" default=" " />
+			<param name="num_format" type="radio" default="0" label="# Num Column" description="Show Id or Incremental Num.">
+				<option value="1">Id</option>
+				<option value="0">Incremental Num</option>
+			</param>
+			<param type="spacer" default=" " />
+			<param name="show_category" type="list" default="1" label="# Category Column" description="Show/Hide the Category column">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			<param name="category_width" type="text" size="15" default="25%" label="Category Width" description="MENUCATEGORYWIDTH" />
+			<param type="spacer" default=" " />
+			<param name="show_action_mode" type="list" default="1" label="# Action Mode Column" description="Show/Hide the Category column">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			<param name="action_mode_width" type="text" size="15" default="25%" label="Action Mode Width" description="MENUCATEGORYWIDTH" />
+			<param type="spacer" default=" " />
+			<param name="show_state" type="list" default="0" label="# State Column" description="Show/Hide the State column">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			<param name="state_width" type="text" size="15" default="7%" label="State Width" description="MENUCATEGORYWIDTH" />
+			<param name="@spacer" type="spacer" default="" label="" description="" />
+			<param name=" " type="panelinfo2" default="0" label="" description="PANEL INFO ELEMENT" />
+		</advanced>
+	</state>
+
+</metadata>

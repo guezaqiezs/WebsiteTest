@@ -1,0 +1,93 @@
+
+/* ToolTips, first example */
+
+div.ToolTips {
+	display:block;
+	position:absolute;
+	width:300px;
+	z-index:100000;	
+}
+/*
+div.ToolTips div.top {
+	display:block;
+	position:relative;
+	background:url(images/top.gif) top center no-repeat;
+	color:#FFFFFF;
+	font-size:14px;
+	font-weight:bold;
+	padding:5px;
+}
+*/
+div.ToolTips div.message, div.ToolTips div.message_loading {
+	display:block;
+	position:static;
+	background:#004dbc;
+	border:1px solid #ccc;
+	color:#FFF;
+	font-size:11px;
+	padding:10px;
+}
+div.ToolTips div.message_loading{ 
+	background:url(images/loading.gif) center center no-repeat #333333;
+	height:30px;
+}
+/*
+div.ToolTips div.footer {
+	display:block;
+	position:relative;
+	background:url(images/footer.gif) bottom center no-repeat;
+	height:10px;
+}
+
+div.ToolTips div.top a.sticky_close{
+	display:block;
+	position:absolute;
+	background:url(images/close.gif);
+	width:16px;
+	height:16px;
+}
+*/
+/* ToolTips, second example */
+
+div.ToolTips2 {
+	display:block;
+	position:absolute;
+	width:400px;	
+}
+
+div.ToolTips2 div.top {
+	display:block;
+	position:relative;
+	background:url(images/top_green.jpg) top left no-repeat;
+	color:#254b00;
+	font-size:14px;
+	font-weight:bold;
+	padding:5px 30px 5px;	
+}
+
+div.ToolTips2 div.message, div.ToolTips div.message_loading {
+	display:block;
+	position:relative;
+	background:#72bd2a;
+	color:#FFF;
+	font-size:12px;
+	padding:10px;
+}
+div.ToolTips2 div.message_loading{ 
+	background:url(images/loading.gif) center center no-repeat #333333;
+	height:30px;
+}
+div.ToolTips2 div.footer {
+	display:block;
+	position:relative;
+	background:#000000;
+	height:5px;
+}
+
+div.ToolTips2 div.top a.sticky_close{
+	display:block;
+	position:absolute;
+	background:url(images/close.gif);
+	width:16px;
+	height:16px;
+}

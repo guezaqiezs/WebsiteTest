@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="module" version="1.0.0">
+	<name>Gtalk chatback badge</name>
+	<author>Esteban Capoccetti</author>
+	<creationDate>September 2008</creationDate>
+	<copyright>(C) 2008 E. Capoccetti</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>esteban.capoccetti@gmail.com</authorEmail>
+	<authorUrl>zarateprop.com.ar</authorUrl>
+	<version>0.0.1</version>
+	<description>Publishes a gtalk chatback badge within your Joomla WebSite</description>
+	<files>
+		<filename module="mod_gtalk_chatback">mod_gtalk_chatback.php</filename>
+	</files>
+
+	<params>
+       <param name="url" type="textarea" cols="60" rows="2" default="http://www.google.com/talk/service/badge/Show" label="Gtalk Badge URL" description="URL where Gtalk hosts the Talk chatback badge Service" />
+       <param name="tk" type="textarea" cols="60" rows="5" default="" label="tk" description="You must go to the following Url http://www.google.com/talk/service/badge/New in order to create your TalkChatbacK code. Copy and paste here the TK parameter from the auto-generated html code" />
+    	 <param name="width" type="text" default="200" label="width" description="width" />
+       <param name="height" type="text" default="60" label="height" description="height" />
+	 <param name="allowTransparency" type="radio" default="1" label="allowTransparency" description="allowTransparency" >
+      	<option value="1">Yes</option>
+		<option value="0">No</option>
+	 </param>
+	 <param name="frameBorder" type="radio" default="0" label="frameBorder" description="frameBorder" >
+      	<option value="1">Yes</option>
+		<option value="0">No</option>
+      </param>
+	</params>
+</mosinstall>

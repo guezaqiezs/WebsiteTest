@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" client="administrator" version="1.5">
+
+	<name>Extended Toolbar - SEBLOD 1.x</name>
+	<author>Octopoos</author>
+	<creationDate>September 2009</creationDate>
+	<authorEmail>contact@seblod.com</authorEmail>
+	<authorUrl>http://www.seblod.com</authorUrl>
+	<copyright>Copyright (C) 2011 SEBLOD. All Rights Reserved.</copyright>
+	<license>GNU General Public License version 2 or later.</license>
+	<version>1.8.5</version>
+	<description>Extended Toolbar - SEBLOD 1.x
+	<![CDATA[
+	<a href="index.php?option=com_modules&client=1">(don't forget to publish it, and select the "toolbar" position) click here</a>
+	]]>
+	</description>
+	
+	<files>
+		<filename module="mod_cckjseblod_toolbar">mod_cckjseblod_toolbar.php</filename>
+		<filename>index.html</filename>
+		<filename>assets/index.html</filename>
+		<filename>assets/css/index.html</filename>
+		<filename>assets/css/cckjseblod_toolbar.css</filename>
+	</files>
+	
+	<languages>
+			<language tag="en-GB">en-GB.mod_cckjseblod_toolbar.ini</language>
+	</languages>
+	
+	<params>
+		<param name="cache" type="list" default="0" label="Caching" description="Select whether to cache the content of this module">
+			<option value="0">Never</option>
+	  	</param>
+	</params>
+
+</install>

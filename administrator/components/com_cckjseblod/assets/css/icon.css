@@ -1,0 +1,229 @@
+/**
+* @author       	http://www.seblod.com
+* @copyright		Copyright (C) 2011 SEBLOD. All Rights Reserved.
+* @package			SEBLOD 1.x (CCK for Joomla!)
+**/
+
+/**
+ * 32
+ **/
+
+.icon-32-new_jseblod {
+	background-image: url(../../assets/images/32/icon-32-new_jseblod.png);
+}
+
+.icon-32-cancel_jseblod {
+	background-image: url(../../assets/images/32/icon-32-cancel_jseblod.png);
+}
+
+.icon-32-publish_jseblod {
+	background-image: url(../../assets/images/32/icon-32-publish_jseblod.png);
+}
+
+.icon-32-unpublish_jseblod {
+	background-image: url(../../assets/images/32/icon-32-unpublish_jseblod.png);
+}
+
+.icon-32-delete_jseblod {
+	background-image: url(../../assets/images/32/icon-32-delete_jseblod.png);
+}
+
+.icon-32-save_jseblod {
+	background-image: url(../../assets/images/32/icon-32-save_jseblod.png);
+}
+
+.icon-32-apply_jseblod {
+	background-image: url(../../assets/images/32/icon-32-apply_jseblod.png);
+}
+
+.icon-32-savenew_jseblod {
+	background-image: url(../../assets/images/32/icon-32-savenew_jseblod.png);
+}
+
+.icon-32-refresh_jseblod {
+	background-image: url(../../assets/images/32/icon-32-refresh_jseblod.png);
+}
+
+.icon-32-export_jseblod {
+	background-image: url(../../assets/images/32/icon-32-export_jseblod.png);
+}
+
+.icon-32-import_jseblod {
+	background-image: url(../../assets/images/32/icon-32-import_jseblod.png);
+}
+
+.icon-32-redirect_jseblod {
+	background-image: url(../../assets/images/32/icon-32-redirect_jseblod.png);
+}
+
+.icon-32-html_jseblod {
+	background-image: url(../../assets/images/32/icon-32-html_jseblod.png);
+}
+
+.icon-32-operations_jseblod {
+	background-image: url(../../assets/images/32/icon-32-operations_jseblod.png);
+}
+
+.icon-32-support_jseblod {
+	background-image: url(../../assets/images/32/icon-32-support_jseblod.png);
+}
+
+.icon-48-data_jseblod { 
+	background-image: url(../../assets/images/48/icon-48-data_jseblod.png); 
+}
+
+.icon-32-types_jseblod {
+	background-image: url(../../assets/images/32/icon-32-types_jseblod.png);
+}
+
+.icon-32-listitems_jseblod {
+	background-image: url(../../assets/images/32/icon-32-listitems_jseblod.png);
+}
+
+.icon-32-searchitems_jseblod {
+	background-image: url(../../assets/images/32/icon-32-searchitems_jseblod.png);
+}
+
+.icon-32-contentitems_jseblod {
+	background-image: url(../../assets/images/32/icon-32-contentitems_jseblod.png);
+}
+
+.icon-32-adminitems_jseblod {
+	background-image: url(../../assets/images/32/icon-32-adminitems_jseblod.png);
+}
+
+.icon-32-siteitems_jseblod {
+	background-image: url(../../assets/images/32/icon-32-siteitems_jseblod.png);
+}
+/**
+ * ......
+ **/
+
+.icon-32-copy2edit	{ 
+	background-image: url(../../assets/images/toolbar/icon-32-copy2edit.png); 
+}
+
+.icon-32-deleteup	{ 
+	background-image: url(../../assets/images/toolbar/icon-32-deleteup.png); 
+}
+
+.icon-32-views	{
+	background-image: url(../../assets/images/toolbar/icon-32-views.png);
+}
+.icon-32-categories	{
+	background-image: url(../../assets/images/toolbar/icon-32-categories.png);
+}
+
+.icon-32-jseblod	{ 
+	background-image: url(../../assets/images/jseblod/icon-32-cckjseblod.png); 
+}
+
+.icon-32-helpjseblod	{ 
+	background-image: url(../../assets/images/jseblod/icon-32-helpjseblod.png); 
+}
+
+.icon-32-process	{ 
+	background-image: url(../../assets/images/toolbar/icon-32-process.png); 
+}
+
+.icon-32-interface	{ 
+	background-image: url(../../assets/images/toolbar/icon-32-interface.png); 
+}
+
+.icon-32-lock	{ 
+	background-image: url(../../assets/images/toolbar/icon-32-lock.png); 
+}
+
+.icon-32-joomla	{ 
+	background-image: url(../../assets/images/toolbar/icon-32-joomla.png); 
+}
+
+.icon-48-category	{ 
+	background-image: url(../../assets/images/cpanel/icon-48-category.png);
+}
+
+.icon-32-new-category {
+	background-image: url(../../assets/images/toolbar/icon-32-new-category.png);
+}
+
+.icon-48-views	{ 
+	background-image: url(../../assets/images/cpanel/icon-48-views.png); 
+}
+
+.icon-32-download {
+	background-image: url(../../assets/images/toolbar/icon-32-download.png); 
+}
+
+.icon-48-item {
+  background-image: url(../../assets/images/toolbar/icon-48-item.png);
+}
+
+.icon-48-jseblod	{ 
+	background-image: url(../../assets/images/jseblod/icon-48-jseblod.png); 
+}
+
+.icon-48-stats {
+background-image: url(../../../../templates/khepri/images/header/icon-48-stats.png); 
+}
+
+.icon-48-templates {
+  background-image: url(../../assets/images/cpanel/icon-48-templates.png);
+}
+
+.icon-48-types {
+  background-image: url(../../assets/images/cpanel/icon-48-types.png);
+}
+
+.icon-48-searchs {
+  background-image: url(../../assets/images/cpanel/icon-48-searchs.png);
+}
+
+
+.icon-16-jseblod {
+  background-image: url(../../assets/images/jseblod/icon-16-jseblod.png);
+}
+
+.icon-16-templates {
+  background-image: url(../../assets/images/submenu/icon-16-templates.png);
+}
+
+.icon-16-packs {
+  background-image: url(../../assets/images/submenu/icon-16-packs.png);
+}
+
+.icon-16-types {
+  background-image: url(../../assets/images/submenu/icon-16-types.png);
+}
+
+.icon-16-cckview {
+  background-image: url(../../assets/images/submenu/icon-16-cckview.png);
+}
+
+.icon-16-items {
+  background-image: url(../../assets/images/submenu/icon-16-items.png);
+}
+
+.icon-48-items {
+  background-image: url(../../assets/images/cpanel/icon-48-items.png);
+}
+
+.icon-48-packs {
+  background-image: url(../../assets/images/cpanel/icon-48-packs.png);
+}
+
+.icon-48-interface {
+  background-image: url(../../assets/images/cpanel/icon-48-interface.png);
+}
+
+.icon-48-configuration {
+	background-image: url(../../assets/images/cpanel/icon-48-configuration.png);
+}
+
+.icon-48-process	{ 
+	background-image: url(../../assets/images/cpanel/icon-48-process.png); 
+}
+
+.icon-32-configuration {
+	background-image: url(../../assets/images/toolbar/icon-32-configuration.png);
+}
+/** TOOLBAR::END **/

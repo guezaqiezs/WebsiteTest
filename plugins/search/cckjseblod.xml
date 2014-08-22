@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="plugin" group="search" version="1.5">
+
+	<name>Search - SEBLOD 1.x</name>
+	<author>Octopoos</author>
+	<creationDate>January 2010</creationDate>
+	<authorEmail>contact@seblod.com</authorEmail>
+	<authorUrl>http://www.seblod.com</authorUrl>
+	<copyright>Copyright (C) 2011 SEBLOD. All Rights Reserved.</copyright>
+	<license>GNU General Public License version 2 or later.</license>
+	<version>1.8.5</version>
+	<description>Search - SEBLOD 1.x</description>
+	
+	<files>
+		<filename plugin="cckjseblod">cckjseblod.php</filename>
+	</files>
+	
+	<params />
+	
+</install>

@@ -1,0 +1,45 @@
+/**
+ * jeFAQ package
+ * @version 1.1
+ * @author J-Extension <contact@jextn.com>
+ * @link http://www.jextn.com
+ * @copyright (C) 2010 - 2011 J-Extension
+ * @license GNU/GPL, see LICENSE.php for full license.
+**/
+
+/* --- Slide area start --- */
+.pane-sliders .panel h3 {
+	background:none repeat scroll 0 0 #F6F6F6;
+	color:#666666;
+}
+
+.pane-sliders .title {
+	color:#666666;
+	cursor:pointer;
+	margin:0;
+	padding:3px;
+}
+
+div#myPane .panel h3 {
+	font-size : 12px;
+}
+
+.pane-sliders .panel {
+	border:1px solid #CCCCCC;
+	margin-bottom:3px;
+}
+
+.jpane-toggler span {
+	background:url("../images/j_arrow.png") no-repeat scroll 5px 50% transparent;
+	padding-left:20px;
+}
+
+.jpane-toggler-down span {
+	background:url("../images/j_arrow_down.png") no-repeat scroll 5px 50% transparent;
+	padding-left:20px;
+}
+
+div#myPane div.jpane-slider.content {
+	padding-left : 7px;
+}
+/* --- Sliders end --- */

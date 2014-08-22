@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+    <name>Webnoo_Follow_US</name>
+    <author>Shekhar Sagar Srivastava</author>
+    <creationDate>July 2011</creationDate>
+    <copyright>Copyright (C) 2011 Webnoo.com - All rights reserved.</copyright>
+    <authorEmail>admin@webnoo.com</authorEmail>
+    <authorUrl>http://www.webnoo.com/</authorUrl>
+    <version>1.1</version>
+    <license>GPL, See LICENSE</license>
+    <description>
+        	Webnoo_Follow_US is a Joomla 1.5 module created by Webnoo Services. It Has Built in Google Pulsone Feature With Various Size Selection and also Lets your visitors to Follow you on Your Social Networking Site Like Facebook, Twitter, Digg, Orkut, Myspace etc.. with a single click.	
+    </description>
+  
+    <files>
+	    <filename module="mod_webnoo_follow_us">mod_webnoo_follow_us.php</filename>
+		<filename module="mod_webnoo_follow_us">index.html</filename>
+		<filename module="mod_webnoo_follow_us">images/index.html</filename>
+		
+		<filename module="mod_webnoo_follow_us">images/facebook.png</filename>
+		<filename module="mod_webnoo_follow_us">images/twitter.png</filename>
+		<filename module="mod_webnoo_follow_us">images/orkut.png</filename>
+		<filename module="mod_webnoo_follow_us">images/bebo.png</filename>
+		<filename module="mod_webnoo_follow_us">images/hi5.png</filename>
+		<filename module="mod_webnoo_follow_us">images/youtube.png</filename>
+		<filename module="mod_webnoo_follow_us">images/google.png</filename>
+		<filename module="mod_webnoo_follow_us">images/blinklist.png</filename>
+		<filename module="mod_webnoo_follow_us">images/flickr.png</filename>
+		<filename module="mod_webnoo_follow_us">images/friendster.png</filename>
+		<filename module="mod_webnoo_follow_us">images/lastfm.png</filename>
+		<filename module="mod_webnoo_follow_us">images/delicious.png</filename>
+		<filename module="mod_webnoo_follow_us">images/digg.png</filename>
+        <filename module="mod_webnoo_follow_us">images/reddit.png</filename>
+		<filename module="mod_webnoo_follow_us">images/stumbleupon.png</filename>
+		<filename module="mod_webnoo_follow_us">images/blogger.png</filename>
+		<filename module="mod_webnoo_follow_us">images/tumblr.png</filename>
+		<filename module="mod_webnoo_follow_us">images/reader.png</filename>
+		<filename module="mod_webnoo_follow_us">images/feedburner.png</filename>
+		<filename module="mod_webnoo_follow_us">images/photobucket.png</filename>
+		<filename module="mod_webnoo_follow_us">images/picasa.png</filename>
+		<filename module="mod_webnoo_follow_us">images/linkedin.png</filename>
+		<filename module="mod_webnoo_follow_us">images/ning.png</filename>
+
+		
+		
+		
+
+		
+    </files>
+		
+    <params>
+        <param name = "@spacer1" type="spacer" default="Visual Preferences" />
+        <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+        <param name="centered" type="radio" default="1" label="Center Images?" description="Would you like the wrap the images in a center tag?">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </param>
+   
+		
+		<param name="width_ico" type="text" default="32" label="Width of Icon" description="Enter the width of icon" />
+		<param name="height_ico" type="text" default="32" label="Height of Icon" description="Enter the height of icon" />
+		<param name="mout_opacity_ico" type="text" default="1" label="Mouse Out Opacity" description="Enter a Value in Decimal, How Light The Icon Should be On Mouseout, eg-1,0.75,0.30,etc.." />
+		
+		<param name="mover_opacity_ico" type="text" default="0.30" label="Mouse Over Opacity" description="Enter a Value in Decimal, How Light The Icon Should be On Mouseover, eg-1,0.75,0.30,etc.." />
+		
+		<param name = "@spacer2" type="spacer" default="Network Sites" />
+		<!-- Enabling/ Disablin Networkin Sites -->
+		
+
+                <!-- Google Plusone Starts -->
+		
+       <param name="plusone" type="radio" default="0" label="Enable Plusone?" description="Do we need to allow Plusone sharing?">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </param>
+	<param name="plusone_size" type="radio" default="3" label="Plusone Size" description="Choose a Plusone Size">
+            <option value="1">Small-15px</option>
+            <option value="2">Medium-20px</option>
+            <option value="3">Standard-24px</option>
+            <option value="4">Tall-60px</option>
+        </param>		
+        <param name = "@spacer3" type="spacer" default="Site Icons URLs" />
+		
+		
+		<!-- Google Plusone Ends -->
+
+		<!-- Facebook Starts -->
+		
+        <param name="facebook" type="radio" default="0" label="Enable Facebook?" description="Do we need to allow facebook sharing?">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </param>
+		<param name="fb_ico" type="text" default="modules/mod_webnoo_follow_us/images/facebook.png" label="Facebook Icon" />
+		<param name="fburl" type="text" default="" label="Facebook URL" description="Enter Your Facebook Page URL" />	
+		
+		<!-- Facebook Ends -->
+		
+		<!-- Twitter Starts -->
+		
+		<param name="twitter" type="radio" default="0" label="Enable Twitter?" description="Do we need to allow Twitter sharing?">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </param>
+        <param name="tw_ico" type="text" default="modules/mod_webnoo_follow_us/images/twitter.png" label="Twitter Icon" />
+		<param name="twurl" type="text" default="" label="Twitter URL" description="Enter Your Twitter Page URL" />
+		
+		
+		<!-- Twitter Ends -->
+		
+		<!-- Orkut Starts -->
+		
+		
+	    <param name="orkut" type="radio" default="0" label="Enable Orkut?" description="Do we need to allow Orkut sharing?">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </param>
+		<param name="ork_ico" type="text" default="modules/mod_webnoo_follow_us/images/orkut.png" label="Orkut Icon" />
+		<param name="orkurl" type="text" default="" label="Orkut URL" description="Enter Your Orkut Page URL" />
+		
+		<!-- Orkut Ends -->
+		
+		
+		<!-- Bebo Starts -->
+		
+		<param name="bebo" type="radio" default="0" label="Enable Bebo?" description="Do we need to allow Bebo sharing?">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </param>
+		<param name="beb_ico" type="text" default="modules/mod_webnoo_follow_us/images/bebo.png" label="Bebo Icon" />
+		<param name="beburl" type="text" default="" label="Bebo URL" description="Enter Your Bebo Page URL" />
+		
+		<!-- Bebo Ends -->
+		
+		
+		<!-- hi5 Starts -->
+		
+		<param name="hi5" type="radio" default="0" label="Enable hi5?" description="Do we need to allow hi5 sharing?">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </param>
+		<param name="hi5_ico" type="text" default="modules/mod_webnoo_follow_us/images/hi5.png" label="hi5 Icon" />
+		<param name="hi5url" type="text" default="" label="hi5 URL" description="Enter Your hi5 Page URL" />
+		
+		<!-- hi5 Ends -->
+		
+		
+		<!-- Youtube Starts -->
+		
+		<param name="youtube" type="radio" default="0" label="Enable Youtube?" description="Do we need to allow Youtube sharing?">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </param>
+		<param name="yout_ico" type="text" default="modules/mod_webnoo_follow_us/images/youtube.png" label="Youtube Icon" />
+		<param name="youturl" type="text" default="" label="Youtube URL" description="Enter Your Youtube Page URL" />	
+		<!-- Youtube Ends -->
+		
+		
+		<!-- Google Starts -->	
+		
+        <param name="google" type="radio" default="0" label="Enable Google Bookmarks?" description="Do we need to allow Google bookmarks sharing?">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </param>
+		<param name="goog_ico" type="text" default="modules/mod_webnoo_follow_us/images/google.png" label="Google Icon" />
+		<param name="googurl" type="text" default="" label="Google URL" description="Enter Your Google Page URL" />
+
+	     <!-- Google Ends -->
+	
+	
+	
+		<!-- Blinklist Starts -->
+		
+		
+		<param name="blinklist" type="radio" default="0" label="Enable Blinklist?" description="Do we need to allow Blinklist sharing?">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </param>
+		<param name="blink_ico" type="text" default="modules/mod_webnoo_follow_us/images/blinklist.png" label="Blinklist Icon" />
+		<param name="blink" type="text" default="" label="Blinklist URL" description="Enter Your Blinklist Page URL" />
+		
+		<!-- Blinklist Ends -->
+		
+		
+		<!-- Flickr Starts -->
+		
+		
+		<param name="flickr" type="radio" default="0" label="Enable Flickr?" description="Do we need to allow Flickr sharing?">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </param>
+		<param name="flick_ico" type="text" default="modules/mod_webnoo_follow_us/images/flickr.png" label="Flickr Icon" />
+		<param name="flickurl" type="text" default="" label="Flickr URL" description="Enter Your Flickr Page URL" />	
+		<!-- Flickr Ends -->
+		
+		<!-- Friendster Starts -->
+		
+		
+			
+		<param name="friendster" type="radio" default="0" label="Enable Friendster?" description="Do we need to allow Friendster sharing?">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </param>
+		<param name="friend_ico" type="text" default="modules/mod_webnoo_follow_us/images/friendster.png" label="Friend Icon" />
+		<param name="friendurl" type="text" default="" label="Frienster URL" description="Enter Your Friendster Page URL" />
+		
+		<!-- Friendster Ends -->
+		
+		<!-- Lastfm Starts -->
+		
+		
+		<param name="lastfm" type="radio" default="0" label="Enable Lastfm?" description="Do we need to allow Lastfm sharing?">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </param>
+		<param name="lstf_ico" type="text" default="modules/mod_webnoo_follow_us/images/lastfm.png" label="Lastfm Icon" />
+		<param name="lstfurl" type="text" default="" label="Lastfm URL" description="Enter Your Lastfm Page URL" />
+		
+		<!-- Lastfm Ends -->
+		
+		<!-- Delicious Starts -->
+		
+		
+        <param name="delicious" type="radio" default="0" label="Enable Delicious?" description="Do we need to allow Delicious sharing?">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </param>
+		<param name="del_ico" type="text" default="modules/mod_webnoo_follow_us/images/delicious.png" label="Delicious Icon" />
+		<param name="delurl" type="text" default="" label="Delicious URL" description="Enter Your Delicious Page URL" />
+		
+		
+		<!-- Delicious Ends -->
+		
+		<!-- Digg Starts -->
+		
+			
+        <param name="digg" type="radio" default="0" label="Enable Digg?" description="Do we need to allow Digg sharing?">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </param>
+		<param name="digg_ico" type="text" default="modules/mod_webnoo_follow_us/images/digg.png" label="Digg Icon" />
+		<param name="diggurl" type="text" default="" label="Digg URL" description="Enter Your Digg Page URL" />
+		
+		
+		<!-- Digg Ends -->
+		
+		
+		<!-- Reddit Starts -->
+		
+		
+		<param name="reddit" type="radio" default="0" label="Enable Reddit?" description="Do we need to allow Reddit sharing?">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </param>
+		<param name="redd_ico" type="text" default="modules/mod_webnoo_follow_us/images/reddit.png" label="Reddit Icon" />
+		<param name="reddurl" type="text" default="" label="Reddit URL" description="Enter Your Reddit Page URL" />
+		<!-- Reddit Ends -->
+		
+		
+		<!-- Stumbleupon Starts -->
+		
+
+		<param name="stumbleupon" type="radio" default="0" label="Enable Stumbleupon?" description="Do we need to allow Stumbleupon sharing?">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </param>
+		<param name="stumb_ico" type="text" default="modules/mod_webnoo_follow_us/images/stumbleupon.png" label="Stumbleupon Icon" />
+		<param name="stumburl" type="text" default="" label="Stumbleupon URL" description="Enter Your Stumbleupon Page URL" />
+		
+		<!-- Stumbleupon Ends -->
+		
+		
+		<!-- Blogger Starts -->
+		
+		<param name="blogger" type="radio" default="0" label="Enable Blogger?" description="Do we need to allow Blogger sharing?">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </param>
+		<param name="blog_ico" type="text" default="modules/mod_webnoo_follow_us/images/blogger.png" label="Blogger Icon" />
+		<param name="blogurl" type="text" default="" label="Blogger URL" description="Enter Your Blogger Page URL" />
+		
+		<!-- Blogger Ends -->
+		
+		
+		<!-- Tumblr Starts -->
+		
+		
+		
+		<param name="tumblr" type="radio" default="0" label="Enable Tumblr?" description="Do we need to allow Tumblr sharing?">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </param>
+		<param name="tumb_ico" type="text" default="modules/mod_webnoo_follow_us/images/tumblr.png" label="Tumblr Icon" />
+		<param name="tumburl" type="text" default="" label="Tumblr URL" description="Enter Your Tumblr Page URL" />
+		
+		
+		<!-- Tumblr Ends -->
+		
+		
+		<!-- Reader Starts -->
+		
+		
+		<param name="reader" type="radio" default="0" label="Enable Reader?" description="Do we need to allow Reader sharing?">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </param>
+		<param name="reader_ico" type="text" default="modules/mod_webnoo_follow_us/images/reader.png" label="Reader Icon" />
+		<param name="readerurl" type="text" default="" label="Reader URL" description="Enter Your Reader Page URL" />	
+			
+		<!-- Reader Ends -->
+		
+		
+		<!-- Feedburner Starts -->	
+			
+		<param name="feedburner" type="radio" default="0" label="Enable Feedburner?" description="Do we need to allow Feedburner sharing?">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </param>
+		<param name="feedb_ico" type="text" default="modules/mod_webnoo_follow_us/images/feedburner.png" label="Feedburner Icon" />
+		<param name="feedburl" type="text" default="" label="Feedburner URL" description="Enter Your Feedburner Page URL" />
+		<!-- Feedburner Ends -->
+		
+		
+		<!-- Photobucket Starts -->
+		
+		
+		
+		<param name="photobucket" type="radio" default="0" label="Enable Photobucket?" description="Do we need to allow Photobucket sharing?">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </param>
+		<param name="photo_ico" type="text" default="modules/mod_webnoo_follow_us/images/photobucket.png" label="Photobucket Icon" />
+		<param name="photourl" type="text" default="" label="Photobucket URL" description="Enter Your Photobucket Page URL" />
+		
+		
+		<!-- Photobucket Ends -->
+		
+		
+		<!-- Picasa Starts -->
+		
+
+		<param name="picasa" type="radio" default="0" label="Enable Picasa?" description="Do we need to allow Picasa sharing?">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </param>
+		<param name="picasa_ico" type="text" default="modules/mod_webnoo_follow_us/images/picasa.png" label="Picasa Icon" />
+		<param name="picasaurl" type="text" default="" label="Picasa URL" description="Enter Your Picasa Page URL" />
+		
+		<!-- Picasa Ends -->
+		
+		
+		<!-- Linkedin Starts -->
+		
+		
+		<param name="linkedin" type="radio" default="0" label="Enable Linkedin?" description="Do we need to allow Linkedin sharing?">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </param>
+		<param name="linkd_ico" type="text" default="modules/mod_webnoo_follow_us/images/linkedin.png" label="Linkedin Icon" />
+		<param name="linkdurl" type="text" default="" label="Linkedin URL" description="Enter Your Linkedin Page URL" />
+		
+		<!-- Linkedin Ends -->
+		
+		
+		
+		<!-- Ning Starts -->
+		
+		<param name="ning" type="radio" default="0" label="Enable Ning?" description="Do we need to allow Ning sharing?">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </param>
+		<param name="ning_ico" type="text" default="modules/mod_webnoo_follow_us/images/ning.png" label="Ning Icon" />
+		<param name="ningurl" type="text" default="" label="Ning URL" description="Enter Your Ning Page URL" />	
+        <param name = "@spacer3" type="spacer" default="Site Icons URLs" />
+		
+		
+		<!-- Ning Ends -->
+		
+			
+	 </params>
+ 
+
+
+
+</install>

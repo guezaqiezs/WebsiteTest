@@ -1,0 +1,23 @@
+/**
+* @author       	http://www.seblod.com
+* @copyright		Copyright (C) 2011 SEBLOD. All Rights Reserved.
+* @package			SEBLOD 1.x (CCK for Joomla!)
+**/
+
+.jtree .node span { background-image: url(../images/list/folder.gif) !important; }
+.jtree li.last .node span { background-image: url(../images/list/folder.gif) !important; }
+
+.jtree .node-open span { background-image: url(../images/list/folderopen.gif) !important; }
+.jtree li.last .node-open span { background-image: url(../images/list/folderopen.gif) !important; }
+
+.jtree .base span { background-image: url(../images/list/folder.gif) !important; }
+.jtree li.last .base span { background-image: url(../images/list/folder.gif) !important; }
+
+#content-node {}
+#form-node {}
+#free-node {}
+#alias-node {}
+#file-node {}
+#group-node {}
+#picker-node {}
+#user-node {}

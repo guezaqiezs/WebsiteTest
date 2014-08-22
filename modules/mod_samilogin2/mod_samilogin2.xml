@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>Sami Login JQuery Edition</name>
+	<author>Sami Elkady</author>
+	<creationDate>April 2011</creationDate>
+	<copyright>Copyright (C) 2011 Samielkady.com Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@Samielkady.com</authorEmail>
+	<authorUrl>www.Samielkady.com</authorUrl>
+	<version>1.0.0</version>
+	<description>this Ajax JQuery Normal Login. enjoy my work! :)</description>
+	<files>
+		<filename module="mod_samilogin2">mod_samilogin2.php</filename>
+		<filename>mod_samilogin2.xml</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<filename>tmpl/default.php</filename>
+        	<filename>tmpl/index.html</filename>
+		<filename>images/background.gif</filename>
+		<filename>images/slide-button.gif</filename>
+		<filename>images/slide-button-active.gif</filename>
+		<filename>images/slide-button-o.gif</filename>
+		<filename>images/slide-button-o-active.gif</filename>
+		<filename>images/index.html</filename>
+        	<filename>js/jquery.min.js</filename>		<filename>js/jquery-ui.min.js</filename>		<filename>js/side-bar.js</filename>
+		<filename>js/index.html</filename>
+		<filename>css/style.css</filename>
+		<filename>css/index.html</filename>		
+	</files>
+</install>

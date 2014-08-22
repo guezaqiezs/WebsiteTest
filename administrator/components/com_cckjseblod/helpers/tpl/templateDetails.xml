@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="template" version="1.5">
+
+	<name>#NAME#</name>
+	<author>Octopoos</author>
+	<creationDate>#DATE#</creationDate>
+	<authorEmail>contact@seblod.com</authorEmail>
+	<authorUrl>http://www.seblod.com</authorUrl>
+	<copyright>Copyright (C) 2011 SEBLOD. All Rights Reserved.</copyright>
+	<license>GNU General Public License version 2 or later.</license>
+	<version>1.8.5</version>
+	<description>#TITLE# #TYPE# Template (Custom) - SEBLOD 1.x</description>
+
+	<files>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>params.ini</filename>
+		<filename>params.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>css/index.html</filename>
+		<filename>images/index.html</filename>
+	</files>
+
+	<positions>
+		<position />
+	</positions>
+
+	<params />
+
+	<locations>
+		<location />
+	</locations>
+	
+</install>

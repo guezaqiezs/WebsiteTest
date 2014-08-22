@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Article Submission Layout">
+		<message>
+			<![CDATA[CONTENT TYPE ARTICLE SUBMISSION LAYOUT]]>
+		</message>
+	</layout>
+	<state>
+		<name>Article Submission Layout ( jSeblod CCK )</name>
+		<description>CONTENT TYPE ARTICLE SUBMISSION LAYOUT</description>
+		<url addpath="/administrator/components/com_cckjseblod/elements">
+			<param name="typeid" type="typearticle" default="0" label="Content Type" description="CONTENT TYPE ELEMENT" />
+			<param name="templateid" type="template" default="0" label="Form Template" description="CONTENT TEMPLATE ELEMENT" />
+		</url> 
+		<params addpath="/administrator/components/com_cckjseblod/elements">
+			<param name=" " type="cckjseblod" default="0" label="Note" description="NOTE ELEMENT" />
+			<param type="spacer" default=" " />
+			<param name="site_live" type="textarea" default="" label="Site Form (Live)" description="Fieldname=Value (Separated by line break)" rows="4" cols="30" />
+		</params>
+	</state>
+
+</metadata>

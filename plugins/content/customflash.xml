@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content" method="upgrade">
+    <name>Content - Custom Flash</name>
+    <author>DesignCompass corp</author>
+    <creationDate>September 2010</creationDate>
+    <copyright>Copyright (C) 2010 DesignCompassCorp. All rights reserved.</copyright>
+    <license>GNU General Public License</license>
+    <authorEmail>admin@designcompasscorp.com</authorEmail>
+    <authorUrl>http://www.designcompasscorp.com/</authorUrl>
+    <version>1.2.1</version>
+    <description>Custom Flash Plugin v 1.2.1 (September 2010) - A plugin to show Adobe Flash movies.</description>
+    <files>
+        <filename plugin="customflash">customflash.php</filename>
+		<filename>customflash.xml</filename>
+    </files>
+    <params>
+	</params>
+</install>

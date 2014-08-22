@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="List Layout">
+		<message>
+			<![CDATA[CONTENT USER LIST LAYOUT]]>
+		</message>
+	</layout>
+	<state>
+		<name>Users. List Layout ( jSeblod CCK )</name>
+		<description>CONTENT USER LIST LAYOUT</description>
+		
+		<params addpath="/administrator/components/com_cckjseblod/elements">
+			<param name="usergroup" type="usergroup" default="" label="User Group" description="Select a User Group" />
+			<param name="category_id" type="category" label="Category" description="Choose a category... (if not: all categories)" />
+			<param name="show_blocked" type="radio" default="0" label="Show Blocked" description="Show/Hide Blocked Users">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param name="@spacer" type="spacer" default="" label="" description="" />
+			<param name="enable_add" type="list" default="" label="Add Button" description="Show/Hide Add Button">
+				<option value="">Hide</option>
+				<option value="left">Left</option>
+				<option value="right">Right</option>
+			</param>
+			<param name="enable_enable" type="list" default="" label="Enable Button" description="Show/Hide Enable Button">
+				<option value="">Hide</option>
+				<option value="left">Left</option>
+				<option value="right">Right</option>
+			</param>
+			<param name="enable_block" type="list" default="" label="Block Button" description="Show/Hide Block Button">
+				<option value="">Hide</option>
+				<option value="left">Left</option>
+				<option value="right">Right</option>
+			</param>
+			<param name="enable_delete" type="list" default="" label="Delete Button" description="Show/Hide Delete Button">
+				<option value="">Hide</option>
+				<option value="left">Left</option>
+				<option value="right">Right</option>
+			</param>
+			<param name="@spacer" type="spacer" default="" label="" description="" />
+			<param name="orderby_sec" type="list" default="alpha" label="Primary Order" description="Order that the items will be displayed in.">
+				<option value="alpha">Name Alphabetical</option>
+				<option value="ralpha">Name Reverse-Alphabetical</option>
+			</param>
+			<param name="@spacer" type="spacer" default="" label="" description="" />
+			<param name=" " type="panelinfo" default="0" label="" description="PANEL INFO ELEMENT" />
+		</params>
+		<advanced addpath="/administrator/components/com_cckjseblod/elements">
+			<param name="show_headings" type="radio" default="1" label="Table Headings" description="Show/Hide the Table Headings">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			<param type="spacer" default=" " />
+			<param name="num_format" type="radio" default="0" label="# Num Column" description="Show Id or Incremental Num.">
+				<option value="1">Id</option>
+				<option value="0">Incremental Num</option>
+			</param>
+			<param type="spacer" default=" " />
+			<param name="show_username" type="list" default="1" label="# Username Column" description="Show/Hide the Username column">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			<param name="username_width" type="text" size="15" default="20%" label="Username Width" description="MENUCATEGORYWIDTH" />
+			<param type="spacer" default=" " />
+			<param name="show_category" type="list" default="0" label="# Category Column" description="Show/Hide the Category column">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			<param name="category_width" type="text" size="15" default="25%" label="Category Width" description="MENUCATEGORYWIDTH" />
+			<param type="spacer" default=" " />
+			<param name="show_email" type="list" default="1" label="# E-mail Column" description="Show/Hide the E-mail column">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			<param name="email_width" type="text" size="15" default="20%" label="E-mail Width" description="MENUCATEGORYWIDTH" />
+			<param type="spacer" default=" " />
+			<param name="show_usergroup" type="list" default="1" label="# User Group Column" description="Show/Hide the User Group column">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			<param name="usergroup_width" type="text" size="15" default="20%" label="User Group Width" description="MENUCATEGORYWIDTH" />
+			<param type="spacer" default=" " />
+			<param name="show_state" type="list" default="0" label="# State Column" description="Show/Hide the State column">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			<param name="state_width" type="text" size="15" default="7%" label="State Width" description="MENUCATEGORYWIDTH" />
+			<param type="spacer" default=" " />
+			<param name="show_edit" type="list" default="0" label="# Edit Column" description="Show/Hide the Edit column">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			<param name="@spacer" type="spacer" default="" label="" description="" />
+			<param name="button_color" type="colorpicker" default="#ffffff" label="Button Text Color" description="Select Title &amp; Panel Title Color" />
+			<param name="button_bgcolor" type="colorpicker" default="#6cc634" label="Button Background Color" description="Select Title &amp; Panel Title Color" />
+			<param name="@spacer" type="spacer" default="" label="" description="" />
+			<param name=" " type="panelinfo2" default="0" label="" description="PANEL INFO ELEMENT" />
+		</advanced>
+	</state>
+
+</metadata>
